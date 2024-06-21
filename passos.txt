@@ -1,0 +1,32 @@
+Configurando o git
+git config --global user.name heloez
+git config --global user.email escolaanaehelo@gmail.com
+
+Criar o projeto
+dotnet new mvc -o Cozastore
+
+ Pressione: Ctrl + Shift + P
+ digite: nuget
+ pesquisar e instalar:
+ - EntityFrameworkCore
+ - EntityFrameworkCore.Design
+ - EntityFrameworkCore.InMemory
+ - Aspnet.Identity.EntityFrameworkCore
+
+
+instalar ferramentas de geração de codigo
+dotnet tool install -g dotnet-aspnet-codegenerator  --version 8.0.1
+
+gerar controller e viws de CRUD:
+dotnet-aspnet-codegenerator controller -name CoresController -m Cor -dc AppDbContext -udl --relativeFolderPath Controllers
+
+Pressione: Ctrl + Shift + P
+Digite: Nuget
+Pesquisar e Instalar
+Microsoft.VisualStudio.Web.CodeGeneration.Design
+ Microsoft.EntityFrameworkCore.SqlServer
+
+ gerar controller e viws de CRUD:
+ dotnet-aspnet-codegenerator controller -name CoresController -m Cor -dc AppDbContext -udl --relativeFolderPath Controllers
+ dotnet-aspnet-codegenerator controller -name TamanhoamanhoController -m Tamanho -dc AppDbContext -udl --relativeFolderPath Controllers
+  dotnet-aspnet-codegenerator controller -name CategoriasController -m Categoria -dc AppDbContext -udl --relativeFolderPath Controllers
