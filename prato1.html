@@ -6,73 +6,121 @@
     <title>Fresh Chicken Veggies - Simples Sabor</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        .recipe-details {
+        body {
+            font-family: Arial, sans-serif;
+            background: url('assets/images/faq-bg.png') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+      
+        .header-logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .header-logo img {
+            width: 120px;
+            height: 120px;
+        }
+        .recipe-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .recipe-header img {
+            width: 300px;
+            height:300px;
+            background-color: #ffffff;
+            border-radius: 8px;
+        }
+        .recipe-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .recipe-info div {
+            margin: 10px 0;
             text-align: center;
         }
-        .recipe-details img {
-            display: block;
-            margin: 0 auto;
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
         }
-        .back-button {
-            display: inline-block;
-            margin: 20px 0;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            text-align: center;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
+        .ingredients {
+            width: 40%; /* Ajusta a largura de cada coluna */
+            margin-left: 25%; /* Move os ingredientes mais para a direita */
+            text-align: left;
+        }
+        .ingredients ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .ingredients li {
+            margin: 15px 0;
+        }
+        .instructions {
+            width: 75%; /* Ajusta a largura de cada coluna */
+        }
+        .instructions ol {
+            padding-left: 20px;
+        }
+        .instructions li {
+            margin: 10px 0;
         }
     </style>
+    
 </head>
-<body>
-    <body class="body-fixed">
-        <header class="site-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-2">
-                        <div class="header-logo">
-                            <a href="index.html">
-                                <img src="logo.png" width="160" height="160" alt="Logo">
-                            </a>
+<body class="body-fixed">
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header-logo">
+                        <img src="logo.png" alt="Logo Simples Sabor">
+                    </div>
+                </div>
+
+                <div class="recipe-header">
+                    <div>
+                        <h1>Nome da Receita</h1>
+                        <div class="recipe-info">
+                            <div>
+                                <img src="assets/images/dish/1.png" alt="">
+                            </div>
                         </div>
                     </div>
+                </div>
 
+                <div class="content">
+                    <div class="ingredients">
+                        <h2>Ingredientes</h2>
+                        <ul>
+                            <li>2 xícaras de chá de feijão preto</li>
+                            <li>2 litros de água morna</li>
+                            <li>1 colher de sopa de óleo</li>
+                            <li>1/2 cebola pequena picada</li>
+                            <li>2 Cubos de Caldo Knorr Carne</li>
+                        </ul>
+                    </div>
 
-    <main>
-        <section class="recipe-details">
-            <h2>Fresh Chicken Veggies</h2>
-            <img src="assets/images/dish/1.png" alt="Fresh Chicken Veggies">
-            <p><strong>Calorias:</strong> 120</p>
-            <p><strong>Tipo:</strong> Non Veg</p>
-            <p><strong>Porções:</strong> 1 pessoa</p>
-            
-            <h3>Ingredientes</h3>
-            <ul>
-                <li>200g de peito de frango</li>
-                <li>100g de brócolis</li>
-                <li>50g de cenoura</li>
-                <li>1 colher de sopa de azeite de oliva</li>
-                <li>Sal e pimenta a gosto</li>
-            </ul>
-            
-            <h3>Modo de Preparo</h3>
-            <ol>
-                <li>Aqueça o azeite em uma frigideira.</li>
-                <li>Corte o peito de frango em cubos e tempere com sal e pimenta.</li>
-                <li>Cozinhe o frango na frigideira até dourar.</li>
-                <li>Adicione os legumes e cozinhe por mais 5-7 minutos.</li>
-                <li>Sirva quente.</li>
-            </ol>
+                    <div class="instructions">
+                        <h2>Modo de Preparo</h2>
+                        <ol>
+                            <li>Coloque o feijão em uma tigela, cubra com água e deixe de molho por 1 hora.</li>
+                            <li>Escorra e transfira-o para uma panela de pressão. Junte a água morna, tampe a panela e cozinhe, em fogo médio, por 15 minutos, contados a partir do início da pressão.</li>
+                            <li>Retire do fogo, aguarde sair todo o vapor e reserve.</li>
+                            <li>Em uma panela, coloque o óleo e leve ao fogo alto para aquecer. Junte a cebola e o alho, e refogue rapidamente.</li>
+                            <li>Transfira o refogado à panela de pressão e adicione os cubos de Caldo Knorr Carne, e misture bem até dissolver.</li>
+                            <li>Deixe cozinhar, em fogo médio, com a panela semitampada, por 10 minutos, ou até o caldo encorpar. Sirva a seguir!</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-            <button class="back-button" onclick="history.back()">Voltar</button>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Simples Sabor. Todos os direitos reservados.</p>
-    </footer>
 </body>
 </html>
-
