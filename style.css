@@ -187,7 +187,7 @@ ul {
     height: 50px;
     outline: none;
     padding: 10px 15px;
-    color: #0d0d25;
+    color: #250d0d;
     -webkit-appearance: none;
     border-radius: 10px;
     border: none;
@@ -879,3 +879,4 @@ p {
 .dish-add-btn:hover {
     background: linear-gradient(145deg, #03571a, #0a852a);
 }
+
