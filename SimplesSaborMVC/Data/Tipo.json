@@ -1,0 +1,14 @@
+[
+    {
+      "Tipo": "Café da Manhã",
+      "Cor": "#aab"
+    },
+    {
+      "Tipo": "Almoço",
+      "Cor": "#39f"
+    },
+    {
+        "Tipo": "Jantar",
+        "Cor": "#39f"
+      }
+  ]

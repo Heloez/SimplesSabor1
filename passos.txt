@@ -1,5 +1,5 @@
 Configurando o git
-git config --global user.name heloez
+git config --global user.name heloezgit config --global user.name heloez
 git config --global user.email escolaanaehelo@gmail.com
 
 Criar o projeto
