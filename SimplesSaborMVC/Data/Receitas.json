@@ -2,7 +2,8 @@
     {
     "Numero": 1,
     "Nome": "Omelete de Legumes",
-    "Tipo": "Ganho de Massa",
+    "Categoria": "Café da Manhã",
+    "Tipo": "Ganho de massa",
     "Calorias": 282,
     "Ingredientes": [
         "2 ovos",
