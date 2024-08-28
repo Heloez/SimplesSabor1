@@ -1,7 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using SimplesSaborMVC.Models;
 
-namespace GcookA.Models;
+namespace SimplesSaborMVC.Models;
 
 [Table("Receita")]
     public class Receita
@@ -20,10 +21,6 @@ namespace GcookA.Models;
         public string TempoPreparo { get; set; }
 
         public int Rendimento { get; set; } = 1;
-
-        public Dificuldade Dificuldade { get; set; }
-
-        [StringLength(300)]
 
         public string Foto { get; set; }
         [Required]
