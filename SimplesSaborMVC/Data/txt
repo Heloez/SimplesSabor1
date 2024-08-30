@@ -158,7 +158,9 @@
         "TempoPreparo": "15 minutos",
         "Imagem": "\\img\\receitas\\wrap_de_frango.png"
     },
+    //10//
     
+
     {
         "Numero": 11,
         "Nome": "Smoothie Verde",
@@ -330,10 +332,11 @@
         "Sal e pimenta a gosto",
         "1 colher de chá de dill seco"
         ],
-        "ModoPreparo": "Tempere o filé de peixe com suco de limão, sal, pimenta e dill. Aqueça o azeite em uma frigideira e cozinhe o peixe até dourar e estar completamente cozido. Adicione o creme de leite e cozinhe por mais 2-3 minutos, até o molho estar quente e levemente espesso. Sirva imediatamente.",
+        "ModoPreparo": "Tempere o filé de peixe com suco de limão, sal, pimenta . Aqueça o azeite em uma frigideira e cozinhe o peixe até dourar e estar completamente cozido. Adicione o creme de leite e cozinhe por mais 2-3 minutos, até o molho estar quente e levemente espesso. Sirva imediatamente.",
         "TempoPreparo": "15 minutos",
         "Imagem": "\\img\\receitas\\file_de_peixe_cremoso.png"
     },
+    //20//
     
     {
         "Numero": 21,
