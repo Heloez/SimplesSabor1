@@ -151,8 +151,7 @@ public class AppDbSeed
         new Ingrediente() {
             Id = 28,
             Nome = "Cacau em Pó"
-        }, 
-        //10//
+        },
         new Ingrediente() {
             Id = 29,
             Nome = "Espinafre"
@@ -237,11 +236,110 @@ public class AppDbSeed
             Id = 49,
             Nome = "Filé de Peixe"
         },
+        new Ingrediente() {
+            Id = 50,
+            Nome = "Lombo de porco"
+        },
+        new Ingrediente() {
+            Id = 51,
+            Nome = "Cebola média, picada"
+        },
+        new Ingrediente() {
+            Id = 52,
+            Nome = "Alho picado"
+        },
+        new Ingrediente() {
+            Id = 53,
+            Nome = "Caldo de carne"
+        },
+        new Ingrediente() {
+            Id = 57,
+            Nome = "Tomilho seco"
+        },
+        new Ingrediente() {
+        Id = 58,
+        Nome = "Peito de frango"
+        },
+        new Ingrediente() {
+            Id = 59,
+            Nome = "Quinoa"
+        },
+        new Ingrediente() {
+            Id = 60,
+            Nome = "Água"
+        },
+        new Ingrediente() {
+            Id = 61,
+            Nome = "Cebola picada"
+        },
+        new Ingrediente() {
+            Id = 62,
+            Nome = "Pimentão vermelho picado"
+        },
+        new Ingrediente() {
+            Id = 63,
+            Nome = "Suco de limão"
+        },
+        new Ingrediente() {
+            Id = 64,
+            Nome = "Carne de boi (patinho ou coxão mole), cortada em cubos"
+        },
+        new Ingrediente() {
+            Id = 65,
+            Nome = "Cebola grande, picada"
+        },
+        new Ingrediente() {
+            Id = 66,
+            Nome = "Alho picado"
+        },
+        new Ingrediente() {
+            Id = 67,
+            Nome = "Cenoura picada"
+        },
+        new Ingrediente() {
+            Id = 68,
+            Nome = "Vinho tinto"
+        },
+        new Ingrediente() {
+            Id = 69,
+            Nome = "Tomate pelado"
+        },
+        new Ingrediente() {
+            Id = 70,
+            Nome = "Caldo de carne"
+        },
+        new Ingrediente() {
+            Id = 71,
+            Nome = "Azeite de oliva"
+        },
+        new Ingrediente() {
+            Id = 72,
+            Nome = "Folha de louro"
+        },
+        new Ingrediente() {
+            Id = 73,
+            Nome = "Filé de salmão"
+        },
+        new Ingrediente() {
+            Id = 74,
+            Nome = "Suco de laranja"
+        },
+        new Ingrediente() {
+            Id = 75,
+            Nome = "Mel"
+        },
+        new Ingrediente() {
+            Id = 76,
+            Nome = "Gengibre fresco ralado"
+        },
+        new Ingrediente() {
+            Id = 77,
+            Nome = "Amido de milho (opcional, para engrossar o molho)"
+        }
+
+
+
         //20//
-
-
-
-
         };
         builder.Entity<Ingrediente>().HasData(ingredientes);
         #endregion
