@@ -46,7 +46,7 @@ public class AppDbSeed
         },
         new Ingrediente() {
             Id = 2,
-            Nome = "Legumes Variados (Cenoura, Abobrinha, Pimentão)"
+            Nome = "cenoura"
         },
         new Ingrediente() {
             Id = 3,
@@ -74,7 +74,7 @@ public class AppDbSeed
         },
         new Ingrediente() {
             Id = 9,
-            Nome = "Frutas Picadas (Morango, Banana, Maçã)"
+            Nome = "Frutas"
         },
         new Ingrediente() {
             Id = 10,
@@ -170,7 +170,7 @@ public class AppDbSeed
         },
         new Ingrediente() {
             Id = 33,
-            Nome = "Quinoa"
+            Nome = "Carne moída"
         },
         new Ingrediente() {
             Id = 34,
@@ -242,7 +242,7 @@ public class AppDbSeed
         },
         new Ingrediente() {
             Id = 51,
-            Nome = "Cebola média, picada"
+            Nome = "Cebola"
         },
         new Ingrediente() {
             Id = 52,
@@ -250,7 +250,7 @@ public class AppDbSeed
         },
         new Ingrediente() {
             Id = 53,
-            Nome = "Caldo de carne"
+            Nome = "Batata doce"
         },
         new Ingrediente() {
             Id = 57,
@@ -270,11 +270,11 @@ public class AppDbSeed
         },
         new Ingrediente() {
             Id = 61,
-            Nome = "Cebola picada"
+            Nome = "Abóbrinha"
         },
         new Ingrediente() {
             Id = 62,
-            Nome = "Pimentão vermelho picado"
+            Nome = "Pimentão verde"
         },
         new Ingrediente() {
             Id = 63,
@@ -286,11 +286,11 @@ public class AppDbSeed
         },
         new Ingrediente() {
             Id = 65,
-            Nome = "Cebola grande, picada"
+            Nome = "molho de soja"
         },
         new Ingrediente() {
             Id = 66,
-            Nome = "Alho picado"
+            Nome = "Folha de alface"
         },
         new Ingrediente() {
             Id = 67,
@@ -334,8 +334,65 @@ public class AppDbSeed
         },
         new Ingrediente() {
             Id = 77,
-            Nome = "Amido de milho (opcional, para engrossar o molho)"
-        }
+            Nome = "Amido de milho"
+        },
+        new Ingrediente() {
+            Id = 78,
+            Nome = "Leite"
+        },
+        new Ingrediente() {
+            Id = 79,
+            Nome = "Manteiga"
+        },
+        new Ingrediente() {
+            Id = 80,
+            Nome = "Macarrão integral"
+        },
+        new Ingrediente() {
+            Id = 81,
+            Nome = "Molho de tomate"
+        },
+        new Ingrediente() {
+            Id = 82,
+            Nome = "Queijo parmesão"
+        },
+        new Ingrediente() {
+            Id = 83,
+            Nome = "Arroz integral"
+        },
+        new Ingrediente() {
+            Id = 84,
+            Nome = "Leite de amêndoas"
+        },
+        new Ingrediente() {
+            Id = 85,
+            Nome = "Papaia pequena"
+        },
+        new Ingrediente() {
+            Id = 86,
+            Nome = "Granola"
+        },
+        new Ingrediente() {
+            Id = 87,
+            Nome = "Canela em pó"
+        },
+        new Ingrediente() {
+            Id = 88,
+            Nome = "Maçã"
+        },
+        new Ingrediente() {
+            Id = 89,
+            Nome = "massa de torta integral"
+        },
+
+
+
+
+
+  
+
+
+
 
 
 

@@ -453,6 +453,7 @@
         "TempoPreparo": "25 minutos",
         "Imagem": "\\img\\receitas\\macarrao_integral_com_frango_desfiado.png"
     },
+    
     {
         "Numero": 27,
         "Nome": "Iscas de Frango com Legumes",
@@ -490,6 +491,7 @@
         "TempoPreparo": "10 minutos",
         "Imagem": "\\img\\receitas\\salada_colorida_de_legumes.png"
     },
+
     {
         "Numero": 29,
         "Nome": "Espaguete de Abobrinha",
@@ -562,6 +564,7 @@
         "TempoPreparo": "15 minutos",
         "Imagem": "\\img\\receitas\\omelete_de_legumes.png"
     },
+
     {
         "Numero": 33,
         "Nome": "Iogurte Natural",
@@ -639,6 +642,7 @@
         "TempoPreparo": "5 minutos",
         "Imagem": "\\img\\receitas\\shake_proteico_de_banana.png"
     },
+    -----------------------------------------------------
     {
         "Numero": 38,
         "Nome": "Taco de Frango com Wrap",
