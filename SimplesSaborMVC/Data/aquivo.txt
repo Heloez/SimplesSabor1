@@ -642,7 +642,6 @@
         "TempoPreparo": "5 minutos",
         "Imagem": "\\img\\receitas\\shake_proteico_de_banana.png"
     },
-    -----------------------------------------------------
     {
         "Numero": 38,
         "Nome": "Taco de Frango com Wrap",
@@ -949,6 +948,7 @@
         "TempoPreparo": "15 minutos",
         "Imagem": "\\img\\receitas\\espaguete_de_abobrinha.png"
     },
+   
     {
         "Numero": 56,
         "Nome": "Lasanha com Recheio de Legumes",

@@ -138,7 +138,7 @@ public class AppDbSeed
         },
         new Ingrediente() {
             Id = 25,
-            Nome = "Vegetais Variados (Alface, Tomate, Cenoura Ralada)"
+            Nome = "Alface"
         },
         new Ingrediente() {
             Id = 26,
@@ -294,7 +294,7 @@ public class AppDbSeed
         },
         new Ingrediente() {
             Id = 67,
-            Nome = "Cenoura picada"
+            Nome = "Berinjela"
         },
         new Ingrediente() {
             Id = 68,
@@ -384,6 +384,102 @@ public class AppDbSeed
             Id = 89,
             Nome = "massa de torta integral"
         },
+         new Ingrediente() {
+            Id = 90,
+            Nome = "tomate"
+        },
+        new Ingrediente() {
+            Id = 91,
+            Nome = "mostarda"
+        },
+        new Ingrediente() {
+            Id = 92,
+            Nome = "wrap integral"
+        },
+        new Ingrediente() {
+            Id = 93,
+            Nome = "coentro"
+        },
+         new Ingrediente() {
+            Id = 94,
+            Nome = "polvilho doce"
+        },
+        new Ingrediente() {
+            Id = 95,
+            Nome = "páprica"
+        },
+        new Ingrediente() {
+            Id = 96,
+            Nome = "pimenta dedo de moça"
+        },
+        new Ingrediente() {
+            Id = 97,
+            Nome = "Peru"
+        },
+         new Ingrediente() {
+            Id = 98,
+            Nome = "farinha integral"
+        },
+        new Ingrediente() {
+            Id = 99,
+            Nome = "óregano"
+        },
+        new Ingrediente() {
+            Id = 100,
+            Nome = "alho em pó"
+        },
+        new Ingrediente() {
+            Id = 101,
+            Nome = "purê de abóbora"
+        },
+        new Ingrediente() {
+            Id = 102,
+            Nome = "gengibre"
+        },
+         new Ingrediente() {
+            Id = 103,
+            Nome = "caldo de frango"
+        },
+         new Ingrediente() {
+            Id = 104,
+            Nome = "macarrão de arroz cozido"
+        },
+        new Ingrediente() {
+            Id = 105,
+            Nome = "atum"
+        },
+        new Ingrediente() {
+            Id = 106,
+            Nome = "azeitonas pretas "
+        },
+        new Ingrediente() {
+            Id = 107,
+            Nome = "vinagre balsâmico"
+        },
+         new Ingrediente() {
+            Id = 108,
+            Nome = "hortelã"
+        },
+        new Ingrediente() {
+            Id = 109,
+            Nome = "ervilha"
+        },
+        new Ingrediente() {
+            Id = 110,
+            Nome = "milho"
+        },
+         new Ingrediente() {
+            Id = 111,
+            Nome = "lasanha integral"
+        },
+        new Ingrediente() {
+            Id = 112,
+            Nome = "farinha de trigo"
+        }
+        
+        
+        
+    
 
 
 
