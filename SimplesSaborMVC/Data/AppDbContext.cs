@@ -14,6 +14,7 @@ public class AppDbContext : IdentityDbContext
     public DbSet<Ingrediente> Ingredientes { get; set; }
     public DbSet<Receita> Receitas { get; set; }
     public DbSet<ReceitaIngrediente> ReceitaIngredientes { get; set; }
+    public DbSet<Usuario> Usuarios { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
