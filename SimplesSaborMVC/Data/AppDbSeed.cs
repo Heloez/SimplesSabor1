@@ -790,16 +790,16 @@ public class AppDbSeed
                         + "Misture a quinoa cozida com os legumes refogados. Sirva o peito de frango fatiado sobre a quinoa."
         },
             new Receita(){
-                        Id = 24,
-                        Nome = "Salmão ao Molho de Laranja",
-                        Descricao = "Filé de salmão grelhado servido com um molho agridoce de laranja e gengibre.",
-                        CategoriaId = 3, 
-                        Rendimento = 2,
-                        Calorias = 295,
-                        TempoPreparo = "20 minutos",
-                        Foto = "\\img\\receitas\\salmão_ao_molho_de_laranja.png",
-                    Preparo = "Tempere o filé de salmão com sal e pimenta."
-                            +"Aqueça o azeite em uma frigideira e cozinhe o salmão por 4-5 minutos de cada lado, ou até estar completamente cozido"
+                Id = 24,
+                Nome = "Salmão ao Molho de Laranja",
+                Descricao = "Filé de salmão grelhado servido com um molho agridoce de laranja e gengibre.",
+                CategoriaId = 3, 
+                Rendimento = 2,
+                Calorias = 295,
+                TempoPreparo = "20 minutos",
+                Foto = "\\img\\receitas\\salmão_ao_molho_de_laranja.png",
+                Preparo = "Tempere o filé de salmão com sal e pimenta."
+                        +"Aqueça o azeite em uma frigideira e cozinhe o salmão por 4-5 minutos de cada lado, ou até estar completamente cozido"
         },
             new Receita(){
                 Id = 25,
@@ -1271,150 +1271,1622 @@ public class AppDbSeed
         }
     };
 
-    
         builder.Entity<Receita>().HasData(receitas);
         #endregion
 
         #region Populate ReceitaIngrediente
-        List<ReceitaIngrediente> receitaIngredientes = new() {
-            new ReceitaIngrediente() {
-                ReceitaId = 1,
-                IngredienteId = 1,
-                Quantidade = "500g"
-            },
-            new ReceitaIngrediente() {
-                ReceitaId = 1,
-                IngredienteId = 3,
-                Quantidade = "1 pequeno"
-            },
-            new ReceitaIngrediente() {
-                ReceitaId = 1,
-                IngredienteId = 4,
-                Quantidade = "1 pequeno"
-            },
-            new ReceitaIngrediente() {
-                ReceitaId = 1,
-                IngredienteId = 5,
-                Quantidade = "1 pequeno"
-            },
-            new ReceitaIngrediente() {
-                ReceitaId = 1,
-                IngredienteId = 6,
-                Quantidade = "1 colher sopa"
-            },
-            new ReceitaIngrediente() {
-                ReceitaId = 1,
-                IngredienteId = 7,
-                Quantidade = "1 colher sopa"
-            },
-            new ReceitaIngrediente() {
-                ReceitaId = 1,
-                IngredienteId = 8,
-                Quantidade = "1 colher sopa"
-            },
-            new ReceitaIngrediente() {
-                ReceitaId = 1,
-                IngredienteId = 9,
-                Quantidade = "1 colher sopa"
-            },
-            new ReceitaIngrediente() {
-                ReceitaId = 1,
-                IngredienteId = 10,
-                Quantidade = "1 colher sopa"
-            },
-            new ReceitaIngrediente() {
-                ReceitaId = 1,
-                IngredienteId = 11,
-                Quantidade = "A vontade"
-            },
-            new ReceitaIngrediente() {
-                ReceitaId = 1,
-                IngredienteId = 12,
-                Quantidade = "200g"
-            },
-            new ReceitaIngrediente() {
-                ReceitaId = 1,
-                IngredienteId = 13,
-                Quantidade = "200g"
-            },
-            new ReceitaIngrediente() {
-                ReceitaId = 1,
-                IngredienteId = 14,
-                Quantidade = "Um pouco"
-            }
+       List<ReceitaIngrediente> receitaIngredientes = new() {
+    new ReceitaIngrediente() {
+        ReceitaId = 1,
+        IngredienteId = 1, // Ovo
+        Quantidade = "2 unidades"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 1,
+        IngredienteId = 2, // Cenoura
+        Quantidade = "1 unidade ralada"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 1,
+        IngredienteId = 4, // Sal
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 1,
+        IngredienteId = 5, // Pimenta
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 1,
+        IngredienteId = 6, // Aveia
+        Quantidade = "2 colheres de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 1,
+        IngredienteId = 7, // Leite Desnatado ou Vegetal
+        Quantidade = "100ml"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 1,
+        IngredienteId = 71, // Azeite de Oliva
+        Quantidade = "1 colher de sopa"
+    },
+      new ReceitaIngrediente() {
+        ReceitaId = 2,
+        IngredienteId = 6, // Aveia
+        Quantidade = "2 colheres de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 2,
+        IngredienteId = 7, // Leite Desnatado ou Vegetal
+        Quantidade = "100ml"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 2,
+        IngredienteId = 8, // Mel
+        Quantidade = "1 colher de chá"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 2,
+        IngredienteId = 9, // Frutas
+        Quantidade = "A gosto"
+    },
+    // Ingredientes para "Smoothie de Proteína"
+    new ReceitaIngrediente() {
+        ReceitaId = 3,
+        IngredienteId = 11, // Proteína em Pó
+        Quantidade = "1 scoop"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 3,
+        IngredienteId = 12, // Gelo
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 3,
+        IngredienteId = 7, // Leite Desnatado ou Vegetal
+        Quantidade = "200ml"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 3,
+        IngredienteId = 20, // Morangos
+        Quantidade = "5 unidades"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 3,
+        IngredienteId = 75, // Mel
+        Quantidade = "1 colher de chá"
+    },
+    // Ingredientes para "Torrada de Abacate"
+    new ReceitaIngrediente() {
+        ReceitaId = 4,
+        IngredienteId = 13, // Pão Integral
+        Quantidade = "2 fatias"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 4,
+        IngredienteId = 14, // Abacate
+        Quantidade = "1/2 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 4,
+        IngredienteId = 4, // Sal
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 4,
+        IngredienteId = 5, // Pimenta
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 4,
+        IngredienteId = 15, // Suco de Limão
+        Quantidade = "1 colher de chá"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 4,
+        IngredienteId = 1, // Ovo
+        Quantidade = "2 unidades"
+    },
+    // Ingredientes para "Panquecas de Banana"
+    new ReceitaIngrediente() {
+        ReceitaId = 5,
+        IngredienteId = 27, // Banana
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 5,
+        IngredienteId = 1, // Ovo
+        Quantidade = "2 unidades"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 5,
+        IngredienteId = 6, // Aveia
+        Quantidade = "2 colheres de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 5,
+        IngredienteId = 17, // Fermento em Pó
+        Quantidade = "1 colher de chá"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 5,
+        IngredienteId = 18, // Xarope de Bordo ou Mel
+        Quantidade = "A gosto"
+    },
+    // Ingredientes para "Pão com Ovos Mexidos"
+    new ReceitaIngrediente() {
+        ReceitaId = 6,
+        IngredienteId = 13, // Pão Integral
+        Quantidade = "2 fatias"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 6,
+        IngredienteId = 1, // Ovo
+        Quantidade = "2 unidades"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 6,
+        IngredienteId = 79, // Manteiga
+        Quantidade = "1 colher de chá"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 6,
+        IngredienteId = 4, // Sal
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 6,
+        IngredienteId = 5, // Pimenta
+        Quantidade = "A gosto"
+    },
+    // Ingredientes para "Muffin de Banana"
+    new ReceitaIngrediente() {
+        ReceitaId = 7,
+        IngredienteId = 27, // Banana
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 7,
+        IngredienteId = 1, // Ovo
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 7,
+        IngredienteId = 16, // Farinha de Aveia
+        Quantidade = "1/2 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 7,
+        IngredienteId = 17, // Fermento em Pó
+        Quantidade = "1 colher de chá"
+    },
+    // Ingredientes para "Batido de Proteína de Chocolate"
+    new ReceitaIngrediente() {
+        ReceitaId = 8,
+        IngredienteId = 30, // Proteína em Pó de Chocolate
+        Quantidade = "1 scoop"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 8,
+        IngredienteId = 19, // Leite Desnatado
+        Quantidade = "200ml"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 8,
+        IngredienteId = 20, // Gelo
+        Quantidade = "A gosto"
+    },
+    // Ingredientes para "Salada de Frutas"
+    new ReceitaIngrediente() {
+        ReceitaId = 9,
+        IngredienteId = 21, // Morango
+        Quantidade = "1/2 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 9,
+        IngredienteId = 22, // Kiwi
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 9,
+        IngredienteId = 23, // Maçã
+        Quantidade = "1/2 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 9,
+        IngredienteId = 24, // Queijo Cottage
+        Quantidade = "2 colheres de sopa"
+    },
+    // Ingredientes para "Wrap de Frango"
+    new ReceitaIngrediente() {
+        ReceitaId = 10,
+        IngredienteId = 25, // Pão Wrap
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 10,
+        IngredienteId = 26, // Frango Grelhado
+        Quantidade = "100g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 10,
+        IngredienteId = 27, // Alface
+        Quantidade = "2 folhas"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 10,
+        IngredienteId = 28, // Tomate
+        Quantidade = "1/2 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 10,
+        IngredienteId = 29, // Maionese
+        Quantidade = "1 colher de sopa"
+    },
+    // Ingredientes para "Smoothie Verde"
+    new ReceitaIngrediente() {
+        ReceitaId = 11,
+        IngredienteId = 31, // Espinafre
+        Quantidade = "1 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 11,
+        IngredienteId = 19, // Leite Desnatado
+        Quantidade = "200ml"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 11,
+        IngredienteId = 32, // Banana
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 11,
+        IngredienteId = 20, // Gelo
+        Quantidade = "A gosto"
+    },
+    // Ingredientes para "Quinoa com Legumes Assados"
+    new ReceitaIngrediente() {
+        ReceitaId = 12,
+        IngredienteId = 33, // Quinoa
+        Quantidade = "1/2 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 12,
+        IngredienteId = 34, // Cenoura
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 12,
+        IngredienteId = 35, // Abobrinha
+        Quantidade = "1/2 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 12,
+        IngredienteId = 36, // Azeite
+        Quantidade = "1 colher de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 12,
+        IngredienteId = 4, // Sal
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 12,
+        IngredienteId = 5, // Pimenta
+        Quantidade = "A gosto"
+    },
+     // Ingredientes para "Frango Grelhado com Batata Doce"
+    new ReceitaIngrediente() {
+        ReceitaId = 13,
+        IngredienteId = 26, // Peito de Frango
+        Quantidade = "150g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 13,
+        IngredienteId = 37, // Batata Doce
+        Quantidade = "100g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 13,
+        IngredienteId = 36, // Azeite
+        Quantidade = "1 colher de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 13,
+        IngredienteId = 4, // Sal
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 13,
+        IngredienteId = 5, // Pimenta
+        Quantidade = "A gosto"
+    },
+    // Ingredientes para "Salmão Assado"
+    new ReceitaIngrediente() {
+        ReceitaId = 14,
+        IngredienteId = 38, // Salmão
+        Quantidade = "150g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 14,
+        IngredienteId = 36, // Azeite
+        Quantidade = "1 colher de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 14,
+        IngredienteId = 39, // Suco de Limão
+        Quantidade = "1 colher de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 14,
+        IngredienteId = 4, // Sal
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 14,
+        IngredienteId = 5, // Pimenta
+        Quantidade = "A gosto"
+    },
+    // Ingredientes para "Carne Bovina com Arroz Integral"
+    new ReceitaIngrediente() {
+        ReceitaId = 15,
+        IngredienteId = 40, // Carne Bovina
+        Quantidade = "100g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 15,
+        IngredienteId = 41, // Arroz Integral
+        Quantidade = "1/2 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 15,
+        IngredienteId = 42, // Cebola
+        Quantidade = "1/2 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 15,
+        IngredienteId = 43, // Alho
+        Quantidade = "1 dente"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 15,
+        IngredienteId = 36, // Azeite
+        Quantidade = "1 colher de sopa"
+    },
+    // Ingredientes para "Sopa de Lentilha com Legumes"
+    new ReceitaIngrediente() {
+        ReceitaId = 16,
+        IngredienteId = 44, // Lentilha
+        Quantidade = "1/2 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 16,
+        IngredienteId = 34, // Cenoura
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 16,
+        IngredienteId = 45, // Batata
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 16,
+        IngredienteId = 42, // Cebola
+        Quantidade = "1/2 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 16,
+        IngredienteId = 43, // Alho
+        Quantidade = "1 dente"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 16,
+        IngredienteId = 46, // Caldo de Legumes
+        Quantidade = "2 xícaras"
+    },
+    // Ingredientes para "Tofu Mexido com Legumes"
+    new ReceitaIngrediente() {
+        ReceitaId = 17,
+        IngredienteId = 47, // Tofu
+        Quantidade = "200g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 17,
+        IngredienteId = 48, // Pimentão
+        Quantidade = "1/2 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 17,
+        IngredienteId = 31, // Espinafre
+        Quantidade = "1/2 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 17,
+        IngredienteId = 5, // Pimenta
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 17,
+        IngredienteId = 49, // Açafrão
+        Quantidade = "1 colher de chá"
+    },
+    // Ingredientes para "Salada de Grão de Bico"
+    new ReceitaIngrediente() {
+        ReceitaId = 18,
+        IngredienteId = 50, // Grão de Bico
+        Quantidade = "1/2 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 18,
+        IngredienteId = 28, // Tomate
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 18,
+        IngredienteId = 51, // Pepino
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 18,
+        IngredienteId = 42, // Cebola
+        Quantidade = "1/4 unidade"
+    },
+    // Ingredientes para "Carne Moída com Abóbora"
+    new ReceitaIngrediente() {
+        ReceitaId = 19,
+        IngredienteId = 52, // Abóbora
+        Quantidade = "100g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 19,
+        IngredienteId = 40, // Carne Moída
+        Quantidade = "150g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 19,
+        IngredienteId = 53, // Cominho
+        Quantidade = "1 colher de chá"
+    },
+    // Ingredientes para "Filé de Peixe Cremoso"
+    new ReceitaIngrediente() {
+        ReceitaId = 20,
+        IngredienteId = 54, // Filé de Peixe
+        Quantidade = "150g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 20,
+        IngredienteId = 36, // Azeite
+        Quantidade = "1 colher de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 20,
+        IngredienteId = 55, // Creme de Leite
+        Quantidade = "2 colheres de sopa"
+    },
+    // Ingredientes para "Lombo na Panela"
+    new ReceitaIngrediente() {
+        ReceitaId = 21,
+        IngredienteId = 56, // Lombo de Porco
+        Quantidade = "300g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 21,
+        IngredienteId = 42, // Cebola
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 21,
+        IngredienteId = 43, // Alho
+        Quantidade = "2 dentes"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 21,
+        IngredienteId = 57, // Caldo de Carne
+        Quantidade = "1/2 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 21,
+        IngredienteId = 4, // Sal
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 21,
+        IngredienteId = 5, // Pimenta
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 21,
+        IngredienteId = 58, // Tomilho
+        Quantidade = "1 colher de chá"
+    },
+    // Ingredientes para "Ragu de Carne"
+    new ReceitaIngrediente() {
+        ReceitaId = 22,
+        IngredienteId = 40, // Carne de Boi
+        Quantidade = "400g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 22,
+        IngredienteId = 42, // Cebola
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 22,
+        IngredienteId = 43, // Alho
+        Quantidade = "2 dentes"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 22,
+        IngredienteId = 34, // Cenoura
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 22,
+        IngredienteId = 59, // Vinho Tinto
+        Quantidade = "1/2 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 22,
+        IngredienteId = 60, // Tomate Pelado
+        Quantidade = "1 lata"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 22,
+        IngredienteId = 57, // Caldo de Carne
+        Quantidade = "1 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 22,
+        IngredienteId = 61, // Folha de Louro
+        Quantidade = "1 folha"
+    },
+    // Ingredientes para "Peito de Frango Grelhado com Quinoa"
+    new ReceitaIngrediente() {
+        ReceitaId = 23,
+        IngredienteId = 26, // Peito de Frango
+        Quantidade = "200g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 23,
+        IngredienteId = 41, // Quinoa
+        Quantidade = "1/2 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 23,
+        IngredienteId = 42, // Cebola
+        Quantidade = "1/2 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 23,
+        IngredienteId = 48, // Pimentão
+        Quantidade = "1/2 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 23,
+        IngredienteId = 4, // Sal
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 23,
+        IngredienteId = 5, // Pimenta
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 23,
+        IngredienteId = 39, // Suco de Limão
+        Quantidade = "1 colher de sopa"
+    },
+    // Ingredientes para "Salmão ao Molho de Laranja"
+    new ReceitaIngrediente() {
+        ReceitaId = 24,
+        IngredienteId = 38, // Salmão
+        Quantidade = "200g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 24,
+        IngredienteId = 36, // Azeite
+        Quantidade = "1 colher de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 24,
+        IngredienteId = 4, // Sal
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 24,
+        IngredienteId = 5, // Pimenta
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 24,
+        IngredienteId = 62, // Suco de Laranja
+        Quantidade = "1/4 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 24,
+        IngredienteId = 63, // Gengibre
+        Quantidade = "1 colher de chá"
+    },
+    // Ingredientes para "Carne Bovina com Purê de Batata"
+    new ReceitaIngrediente() {
+        ReceitaId = 25,
+        IngredienteId = 40, // Carne Bovina
+        Quantidade = "200g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 25,
+        IngredienteId = 45, // Batata
+        Quantidade = "2 unidades"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 25,
+        IngredienteId = 64, // Manteiga
+        Quantidade = "2 colheres de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 25,
+        IngredienteId = 65, // Leite
+        Quantidade = "1/4 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 25,
+        IngredienteId = 4, // Sal
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 25,
+        IngredienteId = 5, // Pimenta
+        Quantidade = "A gosto"
+    },
+       // Ingredientes para "Macarrão Integral com Frango Desfiado"
+    new ReceitaIngrediente() {
+        ReceitaId = 26,
+        IngredienteId = 66, // Macarrão Integral
+        Quantidade = "200g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 26,
+        IngredienteId = 26, // Frango Desfiado
+        Quantidade = "150g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 26,
+        IngredienteId = 36, // Azeite
+        Quantidade = "1 colher de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 26,
+        IngredienteId = 42, // Cebola
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 26,
+        IngredienteId = 43, // Alho
+        Quantidade = "2 dentes"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 26,
+        IngredienteId = 60, // Molho de Tomate
+        Quantidade = "1/2 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 26,
+        IngredienteId = 67, // Salsinha
+        Quantidade = "A gosto"
+    },
+    // Ingredientes para "Iscas de Frango com Legumes"
+    new ReceitaIngrediente() {
+        ReceitaId = 27,
+        IngredienteId = 26, // Iscas de Frango
+        Quantidade = "200g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 27,
+        IngredienteId = 48, // Pimentão
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 27,
+        IngredienteId = 34, // Cenoura
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 27,
+        IngredienteId = 36, // Azeite
+        Quantidade = "1 colher de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 27,
+        IngredienteId = 68, // Molho de Soja
+        Quantidade = "1 colher de sopa"
+    },
+    // Ingredientes para "Salada Colorida de Legumes"
+    new ReceitaIngrediente() {
+        ReceitaId = 28,
+        IngredienteId = 34, // Cenoura
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 28,
+        IngredienteId = 48, // Pimentão
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 28,
+        IngredienteId = 42, // Cebola
+        Quantidade = "1/2 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 28,
+        IngredienteId = 36, // Azeite
+        Quantidade = "2 colheres de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 28,
+        IngredienteId = 39, // Suco de Limão
+        Quantidade = "1 colher de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 28,
+        IngredienteId = 67, // Salsinha
+        Quantidade = "A gosto"
+    },
+    // Ingredientes para "Espaguete de Abobrinha"
+    new ReceitaIngrediente() {
+        ReceitaId = 29,
+        IngredienteId = 49, // Abobrinha
+        Quantidade = "2 unidades"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 29,
+        IngredienteId = 36, // Azeite
+        Quantidade = "1 colher de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 29,
+        IngredienteId = 43, // Alho
+        Quantidade = "2 dentes"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 29,
+        IngredienteId = 60, // Molho de Tomate
+        Quantidade = "1/2 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 29,
+        IngredienteId = 69, // Queijo Parmesão (opcional)
+        Quantidade = "A gosto"
+    },
+    // Ingredientes para "Peixe Grelhado com Arroz Integral"
+    new ReceitaIngrediente() {
+        ReceitaId = 30,
+        IngredienteId = 70, // Filé de Peixe
+        Quantidade = "200g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 30,
+        IngredienteId = 41, // Arroz Integral
+        Quantidade = "1/2 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 30,
+        IngredienteId = 36, // Azeite
+        Quantidade = "1 colher de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 30,
+        IngredienteId = 4, // Sal
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 30,
+        IngredienteId = 5, // Pimenta
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 30,
+        IngredienteId = 39, // Suco de Limão
+        Quantidade = "1 colher de sopa"
+    },
+    // Ingredientes para "Hambúrguer de Carne com Batata Doce Assada"
+    new ReceitaIngrediente() {
+        ReceitaId = 31,
+        IngredienteId = 40, // Carne Moída
+        Quantidade = "200g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 31,
+        IngredienteId = 71, // Batata Doce
+        Quantidade = "2 unidades"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 31,
+        IngredienteId = 36, // Azeite
+        Quantidade = "1 colher de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 31,
+        IngredienteId = 43, // Alho
+        Quantidade = "2 dentes"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 31,
+        IngredienteId = 72, // Alface e Tomate
+        Quantidade = "A gosto"
+    },
+    // Ingredientes para "Omelete de Legumes"
+    new ReceitaIngrediente() {
+        ReceitaId = 32,
+        IngredienteId = 73, // Ovos
+        Quantidade = "4 unidades"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 32,
+        IngredienteId = 34, // Cenoura
+        Quantidade = "1/2 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 32,
+        IngredienteId = 48, // Pimentão
+        Quantidade = "1/2 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 32,
+        IngredienteId = 74, // Brócolis
+        Quantidade = "1/2 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 32,
+        IngredienteId = 36, // Azeite
+        Quantidade = "1 colher de sopa"
+    },
+    // Ingredientes para "Iogurte Natural"
+    new ReceitaIngrediente() {
+        ReceitaId = 33,
+        IngredienteId = 75, // Iogurte Natural
+        Quantidade = "1 pote"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 33,
+        IngredienteId = 55, // Mel
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 33,
+        IngredienteId = 76, // Frutas Frescas (opcional)
+        Quantidade = "A gosto"
+    },
+    // Ingredientes para "Torrada Integral com Abacate"
+    new ReceitaIngrediente() {
+        ReceitaId = 34,
+        IngredienteId = 77, // Pão Integral
+        Quantidade = "1 fatia"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 34,
+        IngredienteId = 78, // Abacate
+        Quantidade = "1/2 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 34,
+        IngredienteId = 39, // Suco de Limão
+        Quantidade = "1 colher de chá"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 34,
+        IngredienteId = 4, // Sal
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 34,
+        IngredienteId = 5, // Pimenta
+        Quantidade = "A gosto"
+    },
+    // Ingredientes para "Creme de Papaia com Granola"
+    new ReceitaIngrediente() {
+        ReceitaId = 35,
+        IngredienteId = 79, // Papaia
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 35,
+        IngredienteId = 39, // Suco de Limão
+        Quantidade = "1 colher de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 35,
+        IngredienteId = 55, // Mel
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 35,
+        IngredienteId = 80, // Granola
+        Quantidade = "2 colheres de sopa"
+    },
+    // Ingredientes para "Torta de Maçã"
+    new ReceitaIngrediente() {
+        ReceitaId = 36,
+        IngredienteId = 81, // Massa de Torta
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 36,
+        IngredienteId = 82, // Maçãs
+        Quantidade = "3 unidades"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 36,
+        IngredienteId = 55, // Mel
+        Quantidade = "2 colheres de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 36,
+        IngredienteId = 83, // Canela
+        Quantidade = "1 colher de chá"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 36,
+        IngredienteId = 84, // Farinha de Aveia
+        Quantidade = "2 colheres de sopa"
+    },
+    // Ingredientes para "Shake Proteico de Banana"
+    new ReceitaIngrediente() {
+        ReceitaId = 37,
+        IngredienteId = 85, // Banana
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 37,
+        IngredienteId = 86, // Proteína em Pó
+        Quantidade = "1 scoop"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 37,
+        IngredienteId = 87, // Leite Desnatado
+        Quantidade = "200ml"
+    },
+    // Ingredientes para "Taco de Frango com Wrap"
+    new ReceitaIngrediente() {
+        ReceitaId = 38,
+        IngredienteId = 26, // Frango Desfiado
+        Quantidade = "100g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 38,
+        IngredienteId = 88, // Wrap Integral
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 38,
+        IngredienteId = 89, // Cominho
+        Quantidade = "1 colher de chá"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 38,
+        IngredienteId = 72, // Alface e Tomate
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 38,
+        IngredienteId = 75, // Iogurte Grego
+        Quantidade = "1 colher de sopa"
+    },
+    // Ingredientes para "Banana Assada na Airfryer"
+    new ReceitaIngrediente() {
+        ReceitaId = 39,
+        IngredienteId = 85, // Banana
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 39,
+        IngredienteId = 83, // Canela
+        Quantidade = "A gosto"
+    },
+    // Ingredientes para "Toast de Aveia com Ovo e Espinafre"
+    new ReceitaIngrediente() {
+        ReceitaId = 40,
+        IngredienteId = 77, // Pão Integral
+        Quantidade = "2 fatias"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 40,
+        IngredienteId = 73, // Ovos
+        Quantidade = "2 unidades"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 40,
+        IngredienteId = 90, // Espinafre
+        Quantidade = "1 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 40,
+        IngredienteId = 91, // Aveia
+        Quantidade = "1/4 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 40,
+        IngredienteId = 36, // Azeite
+        Quantidade = "1 colher de sopa"
+    },
+    // Ingredientes para "Sanduíche de Frango e Cottage"
+    new ReceitaIngrediente() {
+        ReceitaId = 41,
+        IngredienteId = 77, // Pão Integral
+        Quantidade = "2 fatias"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 41,
+        IngredienteId = 26, // Frango Desfiado
+        Quantidade = "100g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 41,
+        IngredienteId = 92, // Queijo Cottage
+        Quantidade = "2 colheres de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 41,
+        IngredienteId = 72, // Alface
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 41,
+        IngredienteId = 93, // Tomate
+        Quantidade = "1 fatia"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 41,
+        IngredienteId = 94, // Mostarda
+        Quantidade = "A gosto"
+    },
+    // Ingredientes para "Snack de Grão-de-Bico"
+    new ReceitaIngrediente() {
+        ReceitaId = 42,
+        IngredienteId = 95, // Grão-de-bico cozido
+        Quantidade = "1 lata"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 42,
+        IngredienteId = 36, // Azeite
+        Quantidade = "2 colheres de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 42,
+        IngredienteId = 96, // Cominho
+        Quantidade = "1 colher de chá"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 42,
+        IngredienteId = 97, // Páprica
+        Quantidade = "1 colher de chá"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 42,
+        IngredienteId = 4, // Sal
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 42,
+        IngredienteId = 5, // Pimenta
+        Quantidade = "A gosto"
+    },
+    // Ingredientes para "Pão de Queijo Fit"
+    new ReceitaIngrediente() {
+        ReceitaId = 43,
+        IngredienteId = 98, // Queijo Minas
+        Quantidade = "100g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 43,
+        IngredienteId = 99, // Polvilho Doce
+        Quantidade = "1 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 43,
+        IngredienteId = 100, // Ovo
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 43,
+        IngredienteId = 101, // Sal
+        Quantidade = "1 colher de chá"
+    },
+    // Ingredientes para "Ceviche de Salmão"
+    new ReceitaIngrediente() {
+        ReceitaId = 44,
+        IngredienteId = 102, // Salmão Fresco
+        Quantidade = "200g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 44,
+        IngredienteId = 39, // Suco de Limão
+        Quantidade = "1/2 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 44,
+        IngredienteId = 103, // Cebola
+        Quantidade = "1/2 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 44,
+        IngredienteId = 104, // Coentro
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 44,
+        IngredienteId = 4, // Sal
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 44,
+        IngredienteId = 5, // Pimenta
+        Quantidade = "A gosto"
+    },
+    // Ingredientes para "Carne Moída com Abóbora"
+    new ReceitaIngrediente() {
+        ReceitaId = 45,
+        IngredienteId = 105, // Carne Moída
+        Quantidade = "300g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 45,
+        IngredienteId = 106, // Abóbora
+        Quantidade = "200g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 45,
+        IngredienteId = 107, // Cebola
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 45,
+        IngredienteId = 108, // Alho
+        Quantidade = "2 dentes"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 45,
+        IngredienteId = 36, // Azeite
+        Quantidade = "1 colher de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 45,
+        IngredienteId = 4, // Sal
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 45,
+        IngredienteId = 5, // Pimenta
+        Quantidade = "A gosto"
+    },
+    // Ingredientes para "Cestinha de Peito de Peru com Ovo"
+    new ReceitaIngrediente() {
+        ReceitaId = 46,
+        IngredienteId = 109, // Peito de Peru
+        Quantidade = "4 fatias"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 46,
+        IngredienteId = 100, // Ovo
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 46,
+        IngredienteId = 4, // Sal
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 46,
+        IngredienteId = 5, // Pimenta
+        Quantidade = "A gosto"
+    },
+      // Ingredientes para "Ratatouille de Forno Simples"
+    new ReceitaIngrediente() {
+        ReceitaId = 47,
+        IngredienteId = 54, // Abobrinha
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 47,
+        IngredienteId = 55, // Berinjela
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 47,
+        IngredienteId = 56, // Pimentão
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 47,
+        IngredienteId = 57, // Cebola
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 47,
+        IngredienteId = 36, // Azeite
+        Quantidade = "2 colheres de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 47,
+        IngredienteId = 4, // Sal
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 47,
+        IngredienteId = 5, // Pimenta
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 47,
+        IngredienteId = 58, // Tomilho
+        Quantidade = "A gosto"
+    },
+    // Ingredientes para "Frango ao Molho de Laranja"
+    new ReceitaIngrediente() {
+        ReceitaId = 48,
+        IngredienteId = 26, // Frango
+        Quantidade = "300g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 48,
+        IngredienteId = 39, // Suco de Laranja
+        Quantidade = "1/2 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 48,
+        IngredienteId = 36, // Óleo
+        Quantidade = "1 colher de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 48,
+        IngredienteId = 59, // Molho de Soja
+        Quantidade = "2 colheres de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 48,
+        IngredienteId = 60, // Mel
+        Quantidade = "1 colher de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 48,
+        IngredienteId = 61, // Alho
+        Quantidade = "1 dente"
+    },
+    // Ingredientes para "Panqueca Integral"
+    new ReceitaIngrediente() {
+        ReceitaId = 49,
+        IngredienteId = 62, // Farinha Integral
+        Quantidade = "1 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 49,
+        IngredienteId = 63, // Leite
+        Quantidade = "1 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 49,
+        IngredienteId = 100, // Ovo
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 49,
+        IngredienteId = 4, // Sal
+        Quantidade = "1 pitada"
+    },
+    // Ingredientes para "Berinjela no Forno"
+    new ReceitaIngrediente() {
+        ReceitaId = 50,
+        IngredienteId = 55, // Berinjela
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 50,
+        IngredienteId = 36, // Azeite
+        Quantidade = "2 colheres de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 50,
+        IngredienteId = 64, // Orégano
+        Quantidade = "1 colher de chá"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 50,
+        IngredienteId = 65, // Alho em pó
+        Quantidade = "1 colher de chá"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 50,
+        IngredienteId = 4, // Sal
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 50,
+        IngredienteId = 5, // Pimenta
+        Quantidade = "A gosto"
+    },
+    // Ingredientes para "Carne Moída com Legumes e Purê de Abóbora"
+    new ReceitaIngrediente() {
+        ReceitaId = 51,
+        IngredienteId = 105, // Carne Moída
+        Quantidade = "300g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 51,
+        IngredienteId = 66, // Legumes variados (cenoura, ervilha, etc.)
+        Quantidade = "1 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 51,
+        IngredienteId = 67, // Purê de Abóbora
+        Quantidade = "1 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 51,
+        IngredienteId = 36, // Azeite
+        Quantidade = "1 colher de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 51,
+        IngredienteId = 61, // Alho
+        Quantidade = "1 dente"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 51,
+        IngredienteId = 4, // Sal
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 51,
+        IngredienteId = 5, // Pimenta
+        Quantidade = "A gosto"
+    },
+    // Ingredientes para "Creme de Abóbora"
+    new ReceitaIngrediente() {
+        ReceitaId = 52,
+        IngredienteId = 68, // Abóbora
+        Quantidade = "300g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 52,
+        IngredienteId = 69, // Caldo de legumes
+        Quantidade = "500ml"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 52,
+        IngredienteId = 36, // Azeite
+        Quantidade = "1 colher de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 52,
+        IngredienteId = 70, // Cebola
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 52,
+        IngredienteId = 61, // Alho
+        Quantidade = "1 dente"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 52,
+        IngredienteId = 4, // Sal
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 52,
+        IngredienteId = 5, // Pimenta
+        Quantidade = "A gosto"
+    },
+    // Ingredientes para "Creme de Cenoura e Gengibre com Frango"
+    new ReceitaIngrediente() {
+        ReceitaId = 53,
+        IngredienteId = 71, // Cenoura
+        Quantidade = "300g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 53,
+        IngredienteId = 72, // Gengibre
+        Quantidade = "1 colher de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 53,
+        IngredienteId = 26, // Peito de Frango
+        Quantidade = "200g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 53,
+        IngredienteId = 69, // Caldo de Frango
+        Quantidade = "500ml"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 53,
+        IngredienteId = 36, // Azeite
+        Quantidade = "1 colher de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 53,
+        IngredienteId = 70, // Cebola
+        Quantidade = "1 unidade"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 53,
+        IngredienteId = 61, // Alho
+        Quantidade = "1 dente"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 53,
+        IngredienteId = 4, // Sal
+        Quantidade = "A gosto"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 53,
+        IngredienteId = 5, // Pimenta
+        Quantidade = "A gosto"
+    },
+    // Id da Salada de Macarrão de Arroz
+    new ReceitaIngrediente() {
+    ReceitaId = 54, 
+    IngredienteId = 1, // Ovo
+    Quantidade = "2 unidades"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 54,
+        IngredienteId = 13, // Pão Integral
+        Quantidade = "100g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 54,
+        IngredienteId = 32, // Água de Coco
+        Quantidade = "200ml"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 54,
+        IngredienteId = 8, // Mel
+        Quantidade = "1 colher de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 54,
+        IngredienteId = 60, // Água
+        Quantidade = "A gosto"
+    },
+        // Receita 55: Espaguete de Abobrinha
+    new ReceitaIngrediente() {
+        ReceitaId = 55,
+        IngredienteId = 71, // Azeite de Oliva
+        Quantidade = "1 colher de sopa"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 55,
+        IngredienteId = 12, // Alho
+        Quantidade = "2 dentes picados"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 55,
+        IngredienteId = 2, // Abobrinha
+        Quantidade = "2 unidades"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 55,
+        IngredienteId = 81, // Molho de tomate
+        Quantidade = "1/2 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 55,
+        IngredienteId = 82, // Queijo parmesão
+        Quantidade = "A gosto"
+    },
+    // Receita 56: Lasanha com Recheio de Legumes
+    new ReceitaIngrediente() {
+        ReceitaId = 56,
+        IngredienteId = 112, // Farinha de trigo
+        Quantidade = "2 xícaras (para as folhas de lasanha)"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 56,
+        IngredienteId = 19, // Queijo Cottage
+        Quantidade = "1 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 56,
+        IngredienteId = 44, // Tomate Cereja
+        Quantidade = "1 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 56,
+        IngredienteId = 25, // Alface
+        Quantidade = "1 xícara picada"
+    },
+    // Receita 57: Arroz de Forno Integral com Frango
+    new ReceitaIngrediente() {
+        ReceitaId = 57,
+        IngredienteId = 83, // Arroz integral
+        Quantidade = "2 xícaras"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 57,
+        IngredienteId = 24, // Peito de Frango Grelhado
+        Quantidade = "1 xícara desfiado"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 57,
+        IngredienteId = 110, // Milho
+        Quantidade = "1/2 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 57,
+        IngredienteId = 29, // Ervilha
+        Quantidade = "1/2 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 57,
+        IngredienteId = 4, // Sal
+        Quantidade = "A gosto"
+    },
+    // Receita 58: Kibe de Carne
+    new ReceitaIngrediente() {
+        ReceitaId = 58,
+        IngredienteId = 33, // Carne moída
+        Quantidade = "500g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 58,
+        IngredienteId = 37, // Lentilhas
+        Quantidade = "1/2 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 58,
+        IngredienteId = 46, // Cebola Roxa
+        Quantidade = "1 unidade picada"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 58,
+        IngredienteId = 93, // Coentro
+        Quantidade = "A gosto"
+    },
+    // Receita 59: Pizza Fit de Frigideira
+    new ReceitaIngrediente() {
+        ReceitaId = 59,
+        IngredienteId = 80, // Macarrão integral
+        Quantidade = "1 xícara (massa)"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 59,
+        IngredienteId = 81, // Molho de tomate
+        Quantidade = "1/2 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 59,
+        IngredienteId = 82, // Queijo parmesão
+        Quantidade = "50g"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 59,
+        IngredienteId = 21, // Uvas
+        Quantidade = "A gosto"
+    },
+    // Receita 60: Lasanha de Berinjela
+    new ReceitaIngrediente() {
+        ReceitaId = 60,
+        IngredienteId = 67, // Berinjela
+        Quantidade = "2 unidades"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 60,
+        IngredienteId = 81, // Molho de tomate
+        Quantidade = "1 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 60,
+        IngredienteId = 19, // Queijo Cottage
+        Quantidade = "1 xícara"
+    },
+    new ReceitaIngrediente() {
+        ReceitaId = 60,
+        IngredienteId = 82, // Queijo parmesão
+        Quantidade = "50g"
+    }
         };
         builder.Entity<ReceitaIngrediente>().HasData(receitaIngredientes);
         #endregion
         
-        #region Populate Roles - Perfis de Usuário
-        List<IdentityRole> roles = new()
-        {
-            new IdentityRole() {
-               Id = "0b44ca04-f6b0-4a8f-a953-1f2330d30894",
-               Name = "Administrador",
-               NormalizedName = "ADMINISTRADOR"
-            },
-            new IdentityRole() {
-               Id = "bec71b05-8f3d-4849-88bb-0e8d518d2de8",
-               Name = "Usuário",
-               NormalizedName = "USUÁRIO"
-            },
-            new IdentityRole() {
-               Id = "ddf093a6-6cb5-4ff7-9a64-83da34aee005",
-               Name = "Moderador",
-               NormalizedName = "MODERADOR"
-            },
-        };
-        builder.Entity<IdentityRole>().HasData(roles);
-        #endregion
-
-        #region Populate IdentityUser
-        List<IdentityUser> users = new() {
-            new IdentityUser(){
-                Id = "ddf093a6-6cb5-4ff7-9a64-83da34aee005",
-                Email = "admin@gcook.com",
-                NormalizedEmail = "ADMIN@GCOOK.COM",
-                UserName = "Admin",
-                NormalizedUserName = "ADMIN",
-                LockoutEnabled = false,
-                EmailConfirmed = true,
-            }
-        };
-        foreach (var user in users)
-        {
-            PasswordHasher<IdentityUser> pass = new();
-            user.PasswordHash = pass.HashPassword(user, "@Etec123");
-        }
-        builder.Entity<IdentityUser>().HasData(users);
-
-        List<Usuario> usuarios = new(){
-            new Usuario(){
-                UsuarioId = users[0].Id,
-                Nome = "Priscila",
-                DataNascimento = DateTime.Parse("20/12/2006"),
-                Foto = "/img/usuarios/avatar.png"
-            }
-        };
-        builder.Entity<Usuario>().HasData(usuarios);
-        #endregion
-
-        #region Populate UserRole - Usuário com Perfil
-        List<IdentityUserRole<string>> userRoles = new()
-        {
-            new IdentityUserRole<string>() {
-                UserId = users[0].Id,
-                RoleId = roles[0].Id
-            },
-            new IdentityUserRole<string>() {
-                UserId = users[0].Id,
-                RoleId = roles[1].Id
-            },
-            new IdentityUserRole<string>() {
-                UserId = users[0].Id,
-                RoleId = roles[2].Id
-            }
-        };
-        builder.Entity<IdentityUserRole<string>>().HasData(userRoles);
-        #endregion
     }
 }
