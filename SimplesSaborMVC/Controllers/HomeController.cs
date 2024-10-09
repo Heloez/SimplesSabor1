@@ -1,40 +1,40 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using SimplesSaborMVC.Models;
-using SimplesSaborMVC.Data; // Importando o contexto do banco de dados
-using SimplesSaborMVC.ViewModels; // Importando o modelo de visualização
-using Microsoft.EntityFrameworkCore; // Importando para o uso do Include
+using SimplesSaborMVC.Data; 
+using SimplesSaborMVC.ViewModels; 
+using Microsoft.EntityFrameworkCore; 
 
 namespace SimplesSaborMVC.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly AppDbContext _context; // Adicionando o contexto do banco de dados
+        private readonly AppDbContext _context; 
 
-        public HomeController(ILogger<HomeController> logger, AppDbContext context) // Adicionando o contexto no construtor
+        public HomeController(ILogger<HomeController> logger, AppDbContext context) 
         {
             _logger = logger;
-            _context = context; // Inicializando o contexto
+            _context = context; 
         }
 
         public IActionResult Index()
         {
-            // Criando uma instância do HomeVM
+        
             var home = new HomeVM
             {
                 Categorias = _context.Categorias
-                    .Where(c => c.ExibirHome) // Filtrando categorias que devem ser exibidas
+                    .Where(c => c.ExibirHome) 
                     .AsNoTracking()
                     .ToList(),
                 Receitas = _context.Receitas
-                    .Include(r => r.Categoria) // Incluindo categoria relacionada
-                    .Include(r => r.Ingredientes) // Incluindo ingredientes relacionados
+                    .Include(r => r.Categoria) 
+                    .Include(r => r.Ingredientes) 
                     .AsNoTracking()
                     .ToList()
             };
 
-            return View(home); // Passando o modelo para a view
+            return View(home); 
         }
 
         public IActionResult Receita(int id)
@@ -42,16 +42,16 @@ namespace SimplesSaborMVC.Controllers
             var receita = _context.Receitas
                 .Include(r => r.Categoria)
                 .Include(r => r.Ingredientes)
-                .ThenInclude(ir => ir.Ingrediente) // Incluindo ingrediente relacionado
+                .ThenInclude(ir => ir.Ingrediente) 
                 .AsNoTracking()
-                .FirstOrDefault(r => r.Id == id); // Buscando receita pelo ID
+                .FirstOrDefault(r => r.Id == id); 
 
             if (receita == null)
             {
-                return NotFound(); // Retornando 404 se a receita não for encontrada
+                return NotFound(); 
             }
 
-            return View(receita); // Passando a receita para a view
+            return View(receita);
         }
 
         public IActionResult Privacy()
