@@ -1,9 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using SimplesSaborMVC.Models;
-using SimplesSaborMVC.Data; 
-using SimplesSaborMVC.ViewModels; 
-using Microsoft.EntityFrameworkCore; 
+using SimplesSaborMVC.ViewModels;
+using Microsoft.EntityFrameworkCore;
 
 namespace SimplesSaborMVC.Controllers
 {

@@ -1,7 +1,6 @@
 
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using SimplesSaborMVC.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
