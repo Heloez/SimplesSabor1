@@ -6,15 +6,16 @@ namespace SimplesSaborMVC.Data;
 
 public class AppDbContext : IdentityDbContext
 {
-    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+    public AppDbContext(DbContextOptions<AppDbContext> options) 
+        : base(options)
     {
+        
     }
 
     public DbSet<Categoria> Categorias { get; set; }
     public DbSet<Ingrediente> Ingredientes { get; set; }
     public DbSet<Receita> Receitas { get; set; }
     public DbSet<ReceitaIngrediente> ReceitaIngredientes { get; set; }
-    public DbSet<Usuario> Usuarios { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -23,6 +24,16 @@ public class AppDbContext : IdentityDbContext
 
         builder.Entity<ReceitaIngrediente>()
             .HasKey(ri => new { ri.ReceitaId, ri.IngredienteId });
+
+        builder.Entity<ReceitaIngrediente>()
+            .HasOne(ri => ri.Receita)
+            .WithMany(r => r.Ingredientes)
+            .HasForeignKey(ri => ri.ReceitaId);
+
+        builder.Entity<ReceitaIngrediente>()
+            .HasOne(ri => ri.Ingrediente)
+            .WithMany(i => i.Receitas)
+            .HasForeignKey(ri => ri.IngredienteId);
 
     }
 }

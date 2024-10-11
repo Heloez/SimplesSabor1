@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using SimplesSaborMVC.Models;
 using SimplesSaborMVC.ViewModels;
 using Microsoft.EntityFrameworkCore;
+using SimplesSaborMVC.Data;
 
 namespace SimplesSaborMVC.Controllers
 {

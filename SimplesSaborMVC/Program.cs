@@ -1,6 +1,7 @@
 
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using SimplesSaborMVC.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,11 +11,6 @@ var versao = ServerVersion.AutoDetect(conexao);
 builder.Services.AddDbContext<AppDbContext>(
     options => options.UseMySql(conexao, versao)
 );
-builder.Services.AddIdentity<IdentityUser, IdentityRole>(
-    opt => opt.SignIn.RequireConfirmedEmail = true
-)
-.AddEntityFrameworkStores<AppDbContext>()
-.AddDefaultTokenProviders();
 
 builder.Services.AddControllersWithViews();
 
