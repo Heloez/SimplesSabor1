@@ -58,7 +58,8 @@ public class AppDbSeed
                 Rendimento = 1,
                 Calorias = 282,
                 TempoPreparo = "15 minutos",
-                Foto = "\\img\\receitas\\omelete_de_legumes.png",
+                Foto = "/assets/images/dish/omelete_de_legumes.png",
+                Tipo = "Ganho de Massa",
                 Preparo = "Comece pela preparação dos ingredientes, pique os pimentões e a cebola em pequenos cubos, se preferir você também pode usar um processador de alimentos."
                         + "Coloque a carne moída para fritar em uma panela com um pouco de azeite."
                         + "Quando a carne moída já não estiver mais crua, adicione os pimentões e a cebola, mexendo bem para misturar todos os ingredientes."

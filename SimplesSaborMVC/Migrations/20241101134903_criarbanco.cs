@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace SimplesSaborMVC.Migrations
 {
     /// <inheritdoc />
-    public partial class criacaobanco : Migration
+    public partial class criarbanco : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -246,6 +246,8 @@ namespace SimplesSaborMVC.Migrations
                     Rendimento = table.Column<int>(type: "int", nullable: false),
                     Foto = table.Column<string>(type: "varchar(300)", maxLength: 300, nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
+                    Tipo = table.Column<string>(type: "varchar(60)", maxLength: 60, nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
                     Preparo = table.Column<string>(type: "varchar(8000)", maxLength: 8000, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     CategoriaId = table.Column<int>(type: "int", nullable: false),
@@ -308,8 +310,8 @@ namespace SimplesSaborMVC.Migrations
 
             migrationBuilder.InsertData(
                 table: "Receita",
-                columns: new[] { "Id", "Calorias", "CategoriaId", "Descricao", "Foto", "Nome", "Preparo", "Rendimento", "TempoPreparo" },
-                values: new object[] { 1, 282, 1, "Prato perfeito para um lanche rápido ou mesmo uma refeição picante. Carne moída, pimentões, temperos e muito queijooooo", "\\img\\receitas\\omelete_de_legumes.png", "Omelete de Legumes", "Comece pela preparação dos ingredientes, pique os pimentões e a cebola em pequenos cubos, se preferir você também pode usar um processador de alimentos.Coloque a carne moída para fritar em uma panela com um pouco de azeite.Quando a carne moída já não estiver mais crua, adicione os pimentões e a cebola, mexendo bem para misturar todos os ingredientes.Aguarde alguns instante e adicione os temperos, mexendo novamente para misturar.Frite por mais alguns minutos a carne com os demais ingredientes.Adicione o Cream Cheese e o Queijo Cheddar, mexendo bem para evitar que queime o fundo e ajudar os queijos a derreterem.Quando os queijos já estiverem bem derretidos e misturados com os demais ingredientes, sirva acompanhado do Pão Sirio ou de Doritos.", 1, "15 minutos" });
+                columns: new[] { "Id", "Calorias", "CategoriaId", "Descricao", "Foto", "Nome", "Preparo", "Rendimento", "TempoPreparo", "Tipo" },
+                values: new object[] { 1, 282, 1, "Prato perfeito para um lanche rápido ou mesmo uma refeição picante. Carne moída, pimentões, temperos e muito queijooooo", "/assets/images/dish/omelete_de_legumes.png", "Omelete de Legumes", "Comece pela preparação dos ingredientes, pique os pimentões e a cebola em pequenos cubos, se preferir você também pode usar um processador de alimentos.Coloque a carne moída para fritar em uma panela com um pouco de azeite.Quando a carne moída já não estiver mais crua, adicione os pimentões e a cebola, mexendo bem para misturar todos os ingredientes.Aguarde alguns instante e adicione os temperos, mexendo novamente para misturar.Frite por mais alguns minutos a carne com os demais ingredientes.Adicione o Cream Cheese e o Queijo Cheddar, mexendo bem para evitar que queime o fundo e ajudar os queijos a derreterem.Quando os queijos já estiverem bem derretidos e misturados com os demais ingredientes, sirva acompanhado do Pão Sirio ou de Doritos.", 1, "15 minutos", "Ganho de Massa" });
 
             migrationBuilder.InsertData(
                 table: "ReceitaIngrediente",

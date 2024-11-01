@@ -24,6 +24,9 @@ public class Receita
     [StringLength(300)]
     public string Foto { get; set; }
 
+    [StringLength(60)]
+    public string Tipo { get; set; }
+
     [Required]
     [StringLength(8000)]
     public string Preparo { get; set; }
