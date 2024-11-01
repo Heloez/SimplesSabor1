@@ -98,12 +98,6 @@ document.querySelector(".filters li").addEventListener("click", onScroll);
 
 const scrolltotop = document.querySelector(".scrolltop");
 
-scrolltotop.addEventListener("click", () =>
-    gsap.to(window, {
-        scrollTo: 0,
-    })
-);
-
 // Scroll to Section
 
 var sections = $('section'),

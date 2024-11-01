@@ -4,21 +4,34 @@
     int i = 1;
 }
 
-<div class=" pt-4 container text-white">
-    <div class="row">
+<div class="mt-4 pt-4 container text-dark">
+    <div class="row mt-5 pt-5">
         <div class="col text-center">
             <h1 class="fs-1">@Model.Nome</h1>
         </div>
     </div>
 
-    <div class="row mt-3">
+    <div class="flex row mt-4 gap-2 justify-content-center">
         <div class="col-lg-4 p-0 rounded-4">
             <img class="w-100 rounded-4" src="@Model.Foto" alt="@Model.Nome">
             <p class="fs-5 mb-0"><b>Rendimento:</b> @Model.Rendimento Porções</p>
             <p class="fs-5 mb-0"><b>Postado por:</b> Ana Laura e Priscila</p>
         </div>
-        @* <div class="col-lg-8 fs-5">
-            <p class="mb-3"><b class="fs-4">Descrição:</b> @Model.Descricao</p>
+        <div class="col-lg-8 fs-5">
+            <p class="mb-3 mt-2"><b class="fs-4">Descrição:</b> @Model.Descricao</p>
+            <p class="fs-4 fw-bold">Ingredientes</p>
+            <ul class="row my-2">
+                @foreach (var ingrediente in Model.Ingredientes)
+                {
+                    <li class="form-check mb-2" onclick="slash('ingrediente-@ingrediente.IngredienteId')">
+                        <input class="form-check-input" type="checkbox" value=""
+                            id="ingrediente-@ingrediente.IngredienteId">
+                        <label class="form-check-label" for="ingrediente-@ingrediente.IngredienteId">
+                            @ingrediente.Quantidade @ingrediente.Ingrediente.Nome
+                        </label>
+                    </li>
+                }
+            </ul>
             <p class="fs-4 fw-bold mb-1">Preparo:</p>
             <ul class="row my-2">
                 @foreach (string passo in Model.Preparo.Split('.'))
@@ -35,21 +48,8 @@
                     }
                 }
             </ul>
-            <p class="fs-4 fw-bold">Ingredientes</p>
-            <ul class="row my-2">
-                @foreach (var ingrediente in Model.Ingredientes)
-                {
-                    <li class="form-check mb-2" onclick="slash('ingrediente-@ingrediente.IngredienteId')">
-                        <input class="form-check-input" type="checkbox" value=""
-                            id="ingrediente-@ingrediente.IngredienteId">
-                        <label class="form-check-label" for="ingrediente-@ingrediente.IngredienteId">
-                            @ingrediente.Quantidade @ingrediente.Ingrediente.Nome
-                        </label>
-                    </li>
-                }
         </div>
-    </div> *@
-</div>
+    </div>
 </div>
 
 @section Scripts {
