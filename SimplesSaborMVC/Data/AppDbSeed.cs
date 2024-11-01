@@ -44,6 +44,26 @@ public class AppDbSeed
                 Id = 1,
                 Nome = "Ovo"
             },
+            new Ingrediente() {
+                Id = 2,
+                Nome = "Pimentão"
+            },
+            new Ingrediente() {
+                Id = 3,
+                Nome = "Cebola"
+            },
+            new Ingrediente() {
+                Id = 4,
+                Nome = "Carne Moída"
+            },
+            new Ingrediente() {
+                Id = 5,
+                Nome = "Cream Cheese"
+            },
+            new Ingrediente() {
+                Id = 6,
+                Nome = "Queijo Cheddar"
+            },
         };
         builder.Entity<Ingrediente>().HasData(ingredientes);
         #endregion
@@ -67,7 +87,7 @@ public class AppDbSeed
                         + "Frite por mais alguns minutos a carne com os demais ingredientes."
                         + "Adicione o Cream Cheese e o Queijo Cheddar, mexendo bem para evitar que queime o fundo e ajudar os queijos a derreterem."
                         + "Quando os queijos já estiverem bem derretidos e misturados com os demais ingredientes, sirva acompanhado do Pão Sirio ou de Doritos."
-            
+
             },
         };
         builder.Entity<Receita>().HasData(receitas);
@@ -79,6 +99,31 @@ public class AppDbSeed
                 ReceitaId = 1,
                 IngredienteId = 1, // Ovo
                 Quantidade = "2 unidades"
+            },
+            new ReceitaIngrediente() {
+                ReceitaId = 1,
+                IngredienteId = 2, // Pimentão
+                Quantidade = "1 unidade"
+            },
+            new ReceitaIngrediente() {
+                ReceitaId = 1,
+                IngredienteId = 3, //
+                Quantidade = "1 unidade"
+            },
+            new ReceitaIngrediente() {
+                ReceitaId = 1,
+                IngredienteId = 4, // colocar depois!
+                Quantidade = "x gramas"
+            },
+            new ReceitaIngrediente() {
+                ReceitaId = 1,
+                IngredienteId = 5, // colocar depois!
+                Quantidade = "x gramas"
+            },
+            new ReceitaIngrediente() {
+                ReceitaId = 1,
+                IngredienteId = 6, // colocar depois
+                Quantidade = "x gramas"
             },
         };
         builder.Entity<ReceitaIngrediente>().HasData(receitaIngredientes);
