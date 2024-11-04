@@ -525,45 +525,45 @@ public class AppDbSeed
                 Preparo = "Coloque todos os ingredientes no liquidificador e bata até obter uma mistura homogênea."
                         + "Sirva em um copo grande."
         },
-           new Receita() {
-                Id = 4,
-                Nome = "Torrada de Abacate",
-                Descricao = "Uma torrada saudável e nutritiva para ganho de massa.",
-                CategoriaId = 1, 
-                Rendimento = 1,
-                Calorias = 310,
-                TempoPreparo = "15 minutos",
-                Foto = "\\img\\receitas\\torrada_de_abacate.png",
-                Preparo = "Torre as fatias de pão."
-                        +" Amasse o abacate com sal, pimenta e suco de limão."
-                        +"Cozinhe os ovos como desejar (mexido ou pochê) e coloque sobre as torradas com abacate."
-        },
             new Receita() {
-                Id = 5,
-                Nome = "Panquecas de Banana",
-                Descricao = "Deliciosas panquecas saudáveis para ganho de massa.",
-                CategoriaId = 1, 
-                Rendimento = 1,
-                Calorias = 250,
-                TempoPreparo = "20 minutos",
-                Foto = "\\img\\receitas\\panquecas_de_banana.png",
-                Preparo = "Amasse a banana e misture com os ovos."
-                        +"Adicione a aveia e o fermento."
-                        +"Cozinhe em uma frigideira quente até dourar dos dois lados."
-                        +"Sirva com mel ou xarope."
-        },
-             new Receita() {
-                Id = 6,
-                Nome = "Pão com Ovos Mexidos",
-                Descricao = "Simples e nutritivo, ideal para ganho de massa.",
-                CategoriaId = 1, 
-                Rendimento = 1,
-                Calorias = 210,
-                TempoPreparo = "10 minutos",
-                Foto = "\\img\\receitas\\pao_com_ovos_mexidos.png",
-                Preparo = "Aqueça a manteiga em uma frigideira, adicione os ovos e mexa até cozinhar."
-                         +"Tempere com sal e pimenta e sirva sobre as fatias de pão torrado."
-        },
+                    Id = 4,
+                    Nome = "Torrada de Abacate",
+                    Descricao = "Uma torrada saudável e nutritiva para ganho de massa.",
+                    CategoriaId = 1, 
+                    Rendimento = 1,
+                    Calorias = 310,
+                    TempoPreparo = "15 minutos",
+                    Foto = "\\img\\receitas\\torrada_de_abacate.png",
+                    Preparo = "Torre as fatias de pão."
+                            +" Amasse o abacate com sal, pimenta e suco de limão."
+                            +"Cozinhe os ovos como desejar (mexido ou pochê) e coloque sobre as torradas com abacate."
+            },
+                new Receita() {
+                    Id = 5,
+                    Nome = "Panquecas de Banana",
+                    Descricao = "Deliciosas panquecas saudáveis para ganho de massa.",
+                    CategoriaId = 1, 
+                    Rendimento = 1,
+                    Calorias = 250,
+                    TempoPreparo = "20 minutos",
+                    Foto = "\\img\\receitas\\panquecas_de_banana.png",
+                    Preparo = "Amasse a banana e misture com os ovos."
+                            +"Adicione a aveia e o fermento."
+                            +"Cozinhe em uma frigideira quente até dourar dos dois lados."
+                            +"Sirva com mel ou xarope."
+            },
+                new Receita() {
+                    Id = 6,
+                    Nome = "Pão com Ovos Mexidos",
+                    Descricao = "Simples e nutritivo, ideal para ganho de massa.",
+                    CategoriaId = 1, 
+                    Rendimento = 1,
+                    Calorias = 210,
+                    TempoPreparo = "10 minutos",
+                    Foto = "\\img\\receitas\\pao_com_ovos_mexidos.png",
+                    Preparo = "Aqueça a manteiga em uma frigideira, adicione os ovos e mexa até cozinhar."
+                            +"Tempere com sal e pimenta e sirva sobre as fatias de pão torrado."
+            },
             new Receita() {
                 Id = 7,
                 Nome = "Muffin de Banana",
