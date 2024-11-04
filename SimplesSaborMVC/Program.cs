@@ -1,18 +1,22 @@
-
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using SimplesSaborMVC.Data;
+using SimplesSaborMVC.Repositories;
+using SimplesSaborMVC.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-string conexao = builder.Configuration.GetConnectionString("Conexao");
-var versao = ServerVersion.AutoDetect(conexao);
+string conexao = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(
-    options => options.UseMySql(conexao, versao)
-);
+    options => options.UseSqlServer(conexao));
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
+builder.Services.AddScoped<IReceitaRepository, ReceitaRepository>();
+builder.Services.AddScoped<IHomeService, HomeService>();
+
 
 var app = builder.Build();
 

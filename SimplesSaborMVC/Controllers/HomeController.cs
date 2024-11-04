@@ -1,54 +1,34 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using SimplesSaborMVC.Models;
+using SimplesSaborMVC.Services;
 using SimplesSaborMVC.ViewModels;
-using Microsoft.EntityFrameworkCore;
-using SimplesSaborMVC.Data;
 
 namespace SimplesSaborMVC.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly AppDbContext _context; 
+        private readonly IHomeService _homeService;
 
-        public HomeController(ILogger<HomeController> logger, AppDbContext context) 
+        public HomeController(ILogger<HomeController> logger, IHomeService homeService)
         {
             _logger = logger;
-            _context = context; 
+            _homeService = homeService;
         }
 
         public IActionResult Index()
         {
-        
-            var home = new HomeVM
-            {
-                Categorias = _context.Categorias
-                    .Where(c => c.ExibirHome) 
-                    .AsNoTracking()
-                    .ToList(),
-                Receitas = _context.Receitas
-                    .Include(r => r.Categoria) 
-                    .Include(r => r.Ingredientes) 
-                    .AsNoTracking()
-                    .ToList()
-            };
-
-            return View(home); 
+            var home = _homeService.GetHomeViewModel();
+            return View(home);
         }
 
         public IActionResult Receita(int id)
         {
-            var receita = _context.Receitas
-                .Include(r => r.Categoria)
-                .Include(r => r.Ingredientes)
-                .ThenInclude(ir => ir.Ingrediente) 
-                .AsNoTracking()
-                .FirstOrDefault(r => r.Id == id); 
-
+            var receita = _homeService.GetReceitaPorId(id);
             if (receita == null)
             {
-                return NotFound(); 
+                return NotFound();
             }
 
             return View(receita);
