@@ -38,7 +38,7 @@ public class AppDbSeed
         builder.Entity<Categoria>().HasData(categorias);
         #endregion
 
-       #region Populate Ingredientes
+        #region Populate Ingredientes
         List<Ingrediente> ingredientes = new() {
             new Ingrediente() {
                 Id = 1,
@@ -239,11 +239,30 @@ public class AppDbSeed
                 Id = 47,
                 Nome = "salsinha"
             },
+            /////////////////////
+            new Ingrediente() {
+                Id = 48,
+                Nome = "Laranja"
+            },
+            new Ingrediente() {
+                Id = 49,
+                Nome = "Mel"
+            },
+           ///////////////////
+           new Ingrediente() {
+                Id = 50,
+                Nome = "Panqueca"
+            },
+           ///////////////////////////
+           new Ingrediente() {
+                Id = 51,
+                Nome = "Berinjela"
+            },
 
 
 
 
-        }; 
+        };
         builder.Entity<Ingrediente>().HasData(ingredientes);
         #endregion
 
@@ -271,7 +290,7 @@ public class AppDbSeed
              new Receita() {
                 Id = 2,
                 Nome = "Aveia com Frutas",
-                CategoriaId = 1, 
+                CategoriaId = 1,
                 Rendimento = 1,
                 Calorias = 127,
                 TempoPreparo = "10 minutos",
@@ -283,7 +302,7 @@ public class AppDbSeed
              new Receita() {
                 Id = 3,
                 Nome = "Smoothie de Proteína",
-                CategoriaId = 4, 
+                CategoriaId = 4,
                 Rendimento = 1,
                 Calorias = 162,
                 TempoPreparo = "5 minutos",
@@ -291,10 +310,10 @@ public class AppDbSeed
                 Preparo = "Coloque todos os ingredientes no liquidificador e bata até obter uma mistura homogênea."
                     + "Sirva em um copo grande."
         },
-        new Receita() {
+            new Receita() {
                 Id = 4,
                 Nome = "Torrada de Abacate",
-                CategoriaId = 1, 
+                CategoriaId = 1,
                 Rendimento = 1,
                 Calorias = 310,
                 TempoPreparo = "15 minutos",
@@ -307,7 +326,7 @@ public class AppDbSeed
             new Receita() {
                 Id = 5,
                 Nome = "Panquecas de Banana",
-                CategoriaId = 1, 
+                CategoriaId = 1,
                 Rendimento = 1,
                 Calorias = 250,
                 TempoPreparo = "20 minutos",
@@ -321,10 +340,10 @@ public class AppDbSeed
                     + " Quando a massa começar a soltar bolhinhas, vire e deixe cozinhar por mais 1 a 2 minutos."
                     + " Repita o processo de cozimento para as demais porções."
         },
-             new Receita() {
+            new Receita() {
                 Id = 6,
                 Nome = "Pão com Ovos Mexidos",
-                CategoriaId = 1, 
+                CategoriaId = 1,
                 Rendimento = 1,
                 Calorias = 210,
                 TempoPreparo = "10 minutos",
@@ -335,7 +354,7 @@ public class AppDbSeed
                     + " Retire do fogo, acrescente o requeijão e misture bem."
                     + " Disponha sobre as fatias de pão e sirva logo em seguida."
         },
-       new Receita() {
+            new Receita() {
                 Id = 7,
                 Nome = "Carne Bovina com Arroz Integral",
                 CategoriaId = 2,
@@ -351,7 +370,7 @@ public class AppDbSeed
             new Receita() {
                 Id = 8,
                 Nome = "Frango Grelhado com Batata Doce",
-                CategoriaId = 2, 
+                CategoriaId = 2,
                 Rendimento = 1,
                 Calorias = 224,
                 TempoPreparo = "25 minutos",
@@ -372,10 +391,10 @@ public class AppDbSeed
                 Preparo = "Tempere o salmão com azeite, suco de limão, sal, pimenta e ervas frescas."
                         +"Asse em forno pré-aquecido a 180°C por cerca de 15 minutos ou até o salmão estar completamente cozido."
         },
-        new Receita(){
+            new Receita(){
                 Id = 10,
                 Nome = "Macarrão Integral com Frango Desfiado",
-                CategoriaId = 3, 
+                CategoriaId = 3,
                 Rendimento = 2,
                 Calorias = 219,
                 TempoPreparo = "25 minutos",
@@ -388,7 +407,7 @@ public class AppDbSeed
             new Receita(){
                 Id = 11,
                 Nome = "Iscas de Frango com Legumes",
-                CategoriaId = 3, 
+                CategoriaId = 3,
                 Rendimento = 2,
                 Calorias = 153,
                 TempoPreparo = "20 minutos",
@@ -399,24 +418,62 @@ public class AppDbSeed
         },
             new Receita(){
                 Id = 12,
-                Nome = "Salada Colorida de Legumes",
-                CategoriaId = 3, 
+                Nome = "Salada",
+                CategoriaId = 3,
                 Rendimento = 2,
                 Calorias = 70,
                 TempoPreparo = "10 minutos",
-                Foto = "/assets/images/dish/salada_colorida_de_legumes.png",
+                Foto ="/assets/images/dish/salada.png",
                 Preparo = "Misture todos os legumes em uma tigela. Em uma pequena tigela separada, combine o azeite, suco de limão, sal e pimenta. "
                         + "Regue a salada com o molho e misture bem. Decore com salsinha antes de servir."
         },
+            new Receita(){
+                Id = 13,
+                Nome = "Frango ao Molho de Laranja",
+                CategoriaId = 2,
+                Rendimento = 2,
+                Calorias = 139,
+                TempoPreparo = "20 minutos",
+                Foto ="/assets/images/dish/frangoaomolho.png",
+                Preparo = "Tempere o frango com sal e pimenta e cozinhe em uma frigideira com um pouco de óleo até que esteja dourado e cozido por completo."
+                        +"Em uma panela pequena, misture o suco de laranja, molho de soja, mel e alho."
+                        +" Cozinhe em fogo baixo até que o molho reduza e engrosse. "
+                        +"Sirva o frango com o molho por cima."
+        },
+             new Receita(){
+                Id = 14,
+                Nome = "Panqueca Integral",
+                CategoriaId = 2,
+                Rendimento = 2,
+                Calorias = 45,
+                TempoPreparo = "10 minutos",
+                Foto ="/assets/images/dish/panquecaintegral.png",
+                Preparo = "Misture todos os ingredientes até formar uma massa homogênea."
+                        +"Aqueça uma frigideira antiaderente e despeje a massa formando pequenas panquecas."
+                        +"Cozinhe por 2-3 minutos de cada lado, ou até que estejam douradas."
+        },
+            new Receita(){
+                Id = 15,
+                Nome = "Berinjela no Forno",
+                CategoriaId = 2,
+                Rendimento = 2,
+                Calorias = 60,
+                TempoPreparo = "30 minutos",
+                Foto ="/assets/images/dish/berinjelanoforno.png",
+                Preparo = "Preaqueça o forno a 200°C. Coloque as rodelas de berinjela em uma assadeira e regue com azeite."
+                        +"Tempere com orégano, alho em pó, sal e pimenta."
+                        +"Asse por 20-25 minutos, virando as rodelas na metade do tempo, até que estejam macias e levemente douradas."
+        },
+
         };
         builder.Entity<Receita>().HasData(receitas);
         #endregion
 
-         #region Populate ReceitaIngrediente
+        #region Populate ReceitaIngrediente
         List<ReceitaIngrediente> receitaIngredientes = new() {
             new ReceitaIngrediente() {
                 ReceitaId = 1,
-                IngredienteId = 1, 
+                IngredienteId = 1,
                 Quantidade = "3 unidades"
             },
             new ReceitaIngrediente() {
@@ -426,12 +483,12 @@ public class AppDbSeed
             },
             new ReceitaIngrediente() {
                 ReceitaId = 1,
-                IngredienteId = 3, 
+                IngredienteId = 3,
                 Quantidade = "a gosto"
             },
             new ReceitaIngrediente() {
                 ReceitaId = 1,
-                IngredienteId = 4, 
+                IngredienteId = 4,
                 Quantidade = "1 colher"
             },
             new ReceitaIngrediente() {
@@ -446,7 +503,7 @@ public class AppDbSeed
             },
                new ReceitaIngrediente() {
                 ReceitaId = 1,
-                IngredienteId = 7, 
+                IngredienteId = 7,
                 Quantidade = "4 unidades"
             },
             new ReceitaIngrediente() {
@@ -462,7 +519,7 @@ public class AppDbSeed
  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                new ReceitaIngrediente() {
                 ReceitaId = 2,
-                IngredienteId = 10, 
+                IngredienteId = 10,
                 Quantidade = "1 xícara"
             },
             new ReceitaIngrediente() {
@@ -472,12 +529,12 @@ public class AppDbSeed
             },
             new ReceitaIngrediente() {
                 ReceitaId = 2,
-                IngredienteId = 12, 
+                IngredienteId = 12,
                 Quantidade = "2 colheres "
             },
             new ReceitaIngrediente() {
                 ReceitaId = 2,
-                IngredienteId = 13, 
+                IngredienteId = 13,
                 Quantidade = "1 colher de sopa "
             },
             new ReceitaIngrediente() {
@@ -492,7 +549,7 @@ public class AppDbSeed
             },
                new ReceitaIngrediente() {
                 ReceitaId = 2,
-                IngredienteId = 16, 
+                IngredienteId = 16,
                 Quantidade = "½ xícara "
             },
             new ReceitaIngrediente() {
@@ -508,7 +565,7 @@ public class AppDbSeed
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             new ReceitaIngrediente() {
                 ReceitaId = 3,
-                IngredienteId = 19, 
+                IngredienteId = 19,
                 Quantidade = "350 ml "
             },
             new ReceitaIngrediente() {
@@ -523,7 +580,7 @@ public class AppDbSeed
             },
                new ReceitaIngrediente() {
                 ReceitaId = 3,
-                IngredienteId = 22, 
+                IngredienteId = 22,
                 Quantidade = "½ xícara "
             },
             new ReceitaIngrediente() {
@@ -544,7 +601,7 @@ public class AppDbSeed
 ////////////////////////////////////////////////////////////////////////////////////////////////
             new ReceitaIngrediente() {
                 ReceitaId = 4,
-                IngredienteId = 25, 
+                IngredienteId = 25,
                 Quantidade = "2 fatias "
             },
             new ReceitaIngrediente() {
@@ -559,18 +616,13 @@ public class AppDbSeed
             },
                new ReceitaIngrediente() {
                 ReceitaId = 4,
-                IngredienteId = 1, 
+                IngredienteId = 1,
                 Quantidade = "4 unidades"
             },
             new ReceitaIngrediente() {
                 ReceitaId = 4,
                 IngredienteId = 29,
                 Quantidade = "1 colher de chá"
-            },
-            new ReceitaIngrediente() {
-                ReceitaId = 4,
-                IngredienteId = 3,
-                Quantidade = "a gosto "
             },
              new ReceitaIngrediente() {
                 ReceitaId = 4,
@@ -585,7 +637,7 @@ public class AppDbSeed
             },
                new ReceitaIngrediente() {
                 ReceitaId = 5,
-                IngredienteId = 10, 
+                IngredienteId = 10,
                 Quantidade = "½ xícara "
             },
             new ReceitaIngrediente() {
@@ -606,7 +658,7 @@ public class AppDbSeed
      //////////////////////////////////////////////////////////////       
             new ReceitaIngrediente() {
                 ReceitaId = 6,
-                IngredienteId = 1, 
+                IngredienteId = 1,
                 Quantidade = "5 unidade "
             },
             new ReceitaIngrediente() {
@@ -627,7 +679,7 @@ public class AppDbSeed
 //////////////////////////////////////////////////////////////////////////////////////
              new ReceitaIngrediente() {
                 ReceitaId = 7,
-                IngredienteId = 34, 
+                IngredienteId = 34,
                 Quantidade = "1 unidade"
             },
             new ReceitaIngrediente() {
@@ -648,7 +700,7 @@ public class AppDbSeed
          /////////////////////////////////////  
             new ReceitaIngrediente() {
                 ReceitaId = 8,
-                IngredienteId = 37, 
+                IngredienteId = 37,
                 Quantidade = "1 unidade"
             },
             new ReceitaIngrediente() {
@@ -685,7 +737,7 @@ public class AppDbSeed
            ////////////////////////////////////
             new ReceitaIngrediente() {
                 ReceitaId = 10,
-                IngredienteId = 41, 
+                IngredienteId = 41,
                 Quantidade = "1 unidade"
             },
             new ReceitaIngrediente() {
@@ -770,6 +822,69 @@ public class AppDbSeed
                 IngredienteId = 47,
                 Quantidade = "a gosto"
             },
+        ///////////////////////////////////
+            new ReceitaIngrediente() {
+                ReceitaId = 13,
+                IngredienteId = 48,
+                Quantidade = "1 unidade"
+            },
+            new ReceitaIngrediente() {
+                ReceitaId = 13,
+                IngredienteId = 37,
+                Quantidade = "1 unidade"
+            },
+             new ReceitaIngrediente() {
+                ReceitaId = 13,
+                IngredienteId = 3,
+                Quantidade = "a gosto"
+            },
+             new ReceitaIngrediente() {
+                ReceitaId = 13,
+                IngredienteId = 29,
+                Quantidade = "a gosto"
+            },
+             new ReceitaIngrediente() {
+                ReceitaId = 13,
+                IngredienteId = 49,
+                Quantidade = "1 colher"
+            },
+              new ReceitaIngrediente() {
+                ReceitaId = 13,
+                IngredienteId = 42,
+                Quantidade = "2 unidades"
+            },
+          //////////////////////////////  
+              new ReceitaIngrediente() {
+                ReceitaId = 14,
+                IngredienteId = 50 ,
+                Quantidade = "5 unidades"
+            },
+           ///////////////////////////// 
+           new ReceitaIngrediente() {
+                ReceitaId = 15,
+                IngredienteId = 51,
+                Quantidade = "3 unidade"
+            },
+             new ReceitaIngrediente() {
+                ReceitaId = 15,
+                IngredienteId = 5,
+                Quantidade = "a gosto"
+            },
+             new ReceitaIngrediente() {
+                ReceitaId = 15,
+                IngredienteId = 42,
+                Quantidade = "1 unidade"
+            },
+             new ReceitaIngrediente() {
+                ReceitaId = 15,
+                IngredienteId = 3,
+                Quantidade = "a gosto"
+            },
+              new ReceitaIngrediente() {
+                ReceitaId = 15,
+                IngredienteId = 29,
+                Quantidade = "a gosto"
+            }
 
         };
         builder.Entity<ReceitaIngrediente>().HasData(receitaIngredientes);
