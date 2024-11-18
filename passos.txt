@@ -5,7 +5,6 @@ toda aula: dotnet ef database update
 
 Criar o projeto
 dotnet new mvc -o Cozastore
-
  Pressione: Ctrl + Shift + P
  digite: nuget
  pesquisar e instalar:

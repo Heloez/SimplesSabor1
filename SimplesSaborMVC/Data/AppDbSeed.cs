@@ -423,7 +423,7 @@ public class AppDbSeed
                 Rendimento = 2,
                 Calorias = 70,
                 TempoPreparo = "10 minutos",
-                Foto ="/assets/images/dish/salada.png",
+                Foto ="/assets/images/dish/isalada_colorida_de_legumes.png",
                 Preparo = "Misture todos os legumes em uma tigela. Em uma pequena tigela separada, combine o azeite, suco de limão, sal e pimenta. "
                         + "Regue a salada com o molho e misture bem. Decore com salsinha antes de servir."
         },
