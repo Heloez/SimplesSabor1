@@ -76,7 +76,7 @@ $(document).ready(function ($) {
                         easing: "ease-in-out",
                     },
                     load: {
-                        filter: ".all, .breakfast, .lunch, .dinner",
+                        filter: ".Café da manhã, .Almoço, .Jantar, .Bebidas",
                     },
                 });
             },

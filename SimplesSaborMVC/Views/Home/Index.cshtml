@@ -110,27 +110,20 @@
                                         <div class="menu-tab text-center">
                                             <ul class="filters">
                                                 <div class="filter-active"></div>
-                                                <li class="filter" data-filter=".all, .breakfast, .lunch, .dinner">
-                                                    <img src="~/assets/images/menu-1.png" alt="">
-                                                    Café da manhã
-                                                </li>
-                                                <li class="filter" data-filter=".breakfast">
-                                                    <img src="~/assets/images/menu-2.png" alt="">
-                                                    Almoço
-                                                </li>
-                                                <li class="filter" data-filter=".lunch">
-                                                    <img src="~/assets/images/menu-3.png" alt="">
-                                                    Jantar
-                                                </li>
-                                                <li class="filter" data-filter=".dinner">
-                                                    <img src="~/assets/images/menu-4.png" alt="">
-                                                    Bebidas
-                                                </li>
+                                                @foreach (var categoria in Model.Categorias)
+                                                {
+                                                    <li class="filter"
+                                                        data-filter=".@categoria.Nome.Replace(' ', '-')">
+                                                        <img src="@categoria.Foto" alt="@categoria.Nome">
+                                                        @categoria.Nome
+                                                    </li>
+                                                }
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                             <!-- Início das receitas -->
                             <div class="menu-list-row">
                                 <div class="row g-xxl-5 bydefault_show" id="menu-dish">
@@ -138,7 +131,7 @@
 
                                     @foreach (var receita in Model.Receitas)
                                     {
-                                        <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="Café da manhã">
+                                        <div class="col-lg-4 col-sm-6 dish-box-wp @receita.Categoria.Nome.Replace(' ', '-')" data-cat="@receita.Categoria.Nome.Replace(' ', '-')">
                                             <a asp-action="Receita" asp-route-id="@receita.Id">
                                                 <div class="dish-box text-center">
                                                     <div class="dist-img">

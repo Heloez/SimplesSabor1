@@ -13,24 +13,25 @@ public class AppDbSeed
             new Categoria() {
                 Id = 1,
                 Nome = "Café da Manhã",
-                Foto = "/img/categorias/1.jpg",
+                Foto = "/img/categorias/1.png",
                 ExibirHome = true
             },
             new Categoria() {
                 Id = 2,
                 Nome = "Almoço",
-                Foto = "/img/categorias/2.jpg"
+                Foto = "/img/categorias/2.png",
+                ExibirHome = true
             },
             new Categoria() {
                 Id = 3,
                 Nome = "Jantar ",
-                Foto = "/img/categorias/3.jpg",
+                Foto = "/img/categorias/3.png",
                 ExibirHome = true
             },
             new Categoria() {
                 Id = 4,
                 Nome = "Bebidas",
-                Foto = "/img/categorias/1.jpg",
+                Foto = "/img/categorias/4.png",
                 ExibirHome = true
             },
         };

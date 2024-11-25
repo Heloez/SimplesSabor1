@@ -12,7 +12,7 @@ using SimplesSaborMVC.Data;
 namespace SimplesSaborMVC.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241106135735_criarbanco")]
+    [Migration("20241125112036_criarbanco")]
     partial class criarbanco
     {
         /// <inheritdoc />
@@ -250,28 +250,28 @@ namespace SimplesSaborMVC.Migrations
                         {
                             Id = 1,
                             ExibirHome = true,
-                            Foto = "/img/categorias/1.jpg",
+                            Foto = "/img/categorias/1.png",
                             Nome = "Café da Manhã"
                         },
                         new
                         {
                             Id = 2,
-                            ExibirHome = false,
-                            Foto = "/img/categorias/2.jpg",
+                            ExibirHome = true,
+                            Foto = "/img/categorias/2.png",
                             Nome = "Almoço"
                         },
                         new
                         {
                             Id = 3,
                             ExibirHome = true,
-                            Foto = "/img/categorias/3.jpg",
+                            Foto = "/img/categorias/3.png",
                             Nome = "Jantar "
                         },
                         new
                         {
                             Id = 4,
                             ExibirHome = true,
-                            Foto = "/img/categorias/1.jpg",
+                            Foto = "/img/categorias/4.png",
                             Nome = "Bebidas"
                         });
                 });
@@ -730,7 +730,7 @@ namespace SimplesSaborMVC.Migrations
                             Calorias = 70,
                             CategoriaId = 3,
                             Foto = "/assets/images/dish/isalada_colorida_de_legumes.png",
-                            Nome = "Salada Colorida de Legumes",
+                            Nome = "Salada",
                             Preparo = "Misture todos os legumes em uma tigela. Em uma pequena tigela separada, combine o azeite, suco de limão, sal e pimenta. Regue a salada com o molho e misture bem. Decore com salsinha antes de servir.",
                             Rendimento = 2,
                             TempoPreparo = "10 minutos"
@@ -740,7 +740,7 @@ namespace SimplesSaborMVC.Migrations
                             Id = 13,
                             Calorias = 139,
                             CategoriaId = 2,
-                            Foto = "/assets/images/dish/frango_ao_molho_de_laranja.png",
+                            Foto = "/assets/images/dish/frangoaomolho.png",
                             Nome = "Frango ao Molho de Laranja",
                             Preparo = "Tempere o frango com sal e pimenta e cozinhe em uma frigideira com um pouco de óleo até que esteja dourado e cozido por completo.Em uma panela pequena, misture o suco de laranja, molho de soja, mel e alho. Cozinhe em fogo baixo até que o molho reduza e engrosse. Sirva o frango com o molho por cima.",
                             Rendimento = 2,
@@ -751,7 +751,7 @@ namespace SimplesSaborMVC.Migrations
                             Id = 14,
                             Calorias = 45,
                             CategoriaId = 2,
-                            Foto = "/assets/images/dish/panqueca_integral.png",
+                            Foto = "/assets/images/dish/panquecaintegral.png",
                             Nome = "Panqueca Integral",
                             Preparo = "Misture todos os ingredientes até formar uma massa homogênea.Aqueça uma frigideira antiaderente e despeje a massa formando pequenas panquecas.Cozinhe por 2-3 minutos de cada lado, ou até que estejam douradas.",
                             Rendimento = 2,
@@ -762,7 +762,7 @@ namespace SimplesSaborMVC.Migrations
                             Id = 15,
                             Calorias = 60,
                             CategoriaId = 2,
-                            Foto = "/assets/images/dish/berinjela_no_forno.png",
+                            Foto = "/assets/images/dish/berinjelanoforno.png",
                             Nome = "Berinjela no Forno",
                             Preparo = "Preaqueça o forno a 200°C. Coloque as rodelas de berinjela em uma assadeira e regue com azeite.Tempere com orégano, alho em pó, sal e pimenta.Asse por 20-25 minutos, virando as rodelas na metade do tempo, até que estejam macias e levemente douradas.",
                             Rendimento = 2,
