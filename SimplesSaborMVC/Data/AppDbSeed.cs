@@ -393,7 +393,7 @@ public class AppDbSeed
                 Calorias = 310,
                 TempoPreparo = "15 minutos",
                 Foto = "/assets/images/dish/torrada_de_abacate.png",
-                Tipo = "Emagrecimento",
+                Tipo = "Ganho de Massa",
                Preparo = "Coloque a manteiga em uma frigideira antiaderente. Quando derreter, quebre os dois ovos, adicione uma pitada de sal e mexa até cozinhar. Reserve."
                     + " Pique metade do avocado e amasse-o em uma tigela pequena. Adicione ½ limão taiti espremido, sal, pimenta e chia (opcional). Misture bem e reserve."
                     + " Coloque as duas fatias de pão 7 grãos na torradeira e toste até ficarem crocantes."
@@ -480,7 +480,7 @@ public class AppDbSeed
                 Calorias = 219,
                 TempoPreparo = "25 minutos",
                 Foto = "/assets/images/dish/macarrao_integral_com_frango_desfiado.png",
-                Tipo = "Emagrecimento",
+                Tipo = "Ganho de Massa",
                 Preparo = "Cozinhe o macarrão integral conforme as instruções da embalagem."
                         +"Em uma panela, aqueça o azeite e refogue a cebola e o alho até ficarem macios. "
                         + "Adicione o frango desfiado e o molho de tomate. Cozinhe por alguns minutos até que tudo esteja bem misturado e aquecido. "
@@ -494,7 +494,7 @@ public class AppDbSeed
                 Calorias = 153,
                 TempoPreparo = "20 minutos",
                 Foto = "/assets/images/dish/iscas_de_frango_com_legumes.png",
-                Tipo = "Emagrecimento",
+                Tipo = "Ganho de Massa",
                 Preparo = "Aqueça o azeite em uma frigideira e refogue as iscas de frango até dourar."
                 +"Adicione os pimentões e a cenoura e continue refogando até os legumes estarem macios. "
                 + "Tempere com molho de soja, sal e pimenta a gosto."
@@ -507,7 +507,7 @@ public class AppDbSeed
                 Calorias = 70,
                 TempoPreparo = "10 minutos",
                 Foto ="/assets/images/dish/isalada_colorida_de_legumes.png",
-                Tipo = "Emagrecimento",
+                Tipo = "Ganho de Massa",
                 Preparo = "Misture todos os legumes em uma tigela. Em uma pequena tigela separada, combine o azeite, suco de limão, sal e pimenta. "
                         + "Regue a salada com o molho e misture bem. Decore com salsinha antes de servir."
         },
@@ -519,7 +519,7 @@ public class AppDbSeed
                 Calorias = 139,
                 TempoPreparo = "20 minutos",
                 Foto ="/assets/images/dish/frangoaomolho.png",
-                Tipo = "Ganho de Massa",
+                Tipo = "Emagrecimento",
                 Preparo = "Tempere o frango com sal e pimenta e cozinhe em uma frigideira com um pouco de óleo até que esteja dourado e cozido por completo."
                         +"Em uma panela pequena, misture o suco de laranja, molho de soja, mel e alho."
                         +" Cozinhe em fogo baixo até que o molho reduza e engrosse. "
@@ -533,7 +533,7 @@ public class AppDbSeed
                 Calorias = 45,
                 TempoPreparo = "10 minutos",
                 Foto ="/assets/images/dish/panquecaintegral.png",
-                Tipo = "Ganho de Massa",
+                Tipo = "Emagrecimento",
                 Preparo = "Misture todos os ingredientes até formar uma massa homogênea."
                         +"Aqueça uma frigideira antiaderente e despeje a massa formando pequenas panquecas."
                         +"Cozinhe por 2-3 minutos de cada lado, ou até que estejam douradas."
@@ -546,7 +546,7 @@ public class AppDbSeed
                 Calorias = 60,
                 TempoPreparo = "30 minutos",
                 Foto ="/assets/images/dish/berinjelanoforno.png",
-                Tipo = "Ganho de Massa",
+                Tipo = "Emagrecimento",
                 Preparo = "Preaqueça o forno a 200°C. Coloque as rodelas de berinjela em uma assadeira e regue com azeite."
                         +"Tempere com orégano, alho em pó, sal e pimenta."
                         +"Asse por 20-25 minutos, virando as rodelas na metade do tempo, até que estejam macias e levemente douradas."
@@ -606,7 +606,7 @@ public class AppDbSeed
                 Rendimento = 2,
                 Calorias = 144,
                 TempoPreparo = "30 minutos",
-                Foto ="/assets/images/dish/ArrozdeFornoIntegralcomFrango",
+                Foto ="/assets/images/dish/Arroz_integral.png",
                 Tipo = "Emagrecimento",
                 Preparo = "Cozinhe 1 xícara de arroz integral conforme as instruções da embalagem e reserve."
                 +"Em uma panela, aqueça 1 colher de sopa de azeite e refogue 1 cebola picada e 2 dentes de alho picados até ficarem macios."
@@ -624,7 +624,7 @@ public class AppDbSeed
                 Calorias = 65,
                 TempoPreparo = "30 minutos",
                 Foto ="/assets/images/dish/Shakeproteicodebanana.png",
-                Tipo = "Emagrecimento",
+                Tipo = "Ganho de Massa",
                 Preparo ="Bata no liquidificador 1 banana madura, 1 scoop de whey protein de sua preferência, 1/2 xícara de leite (pode ser vegetal ou leite comum) e 1 colher de chá de mel."
                     +"Adicione gelo a gosto e bata novamente até ficar homogêneo."
                     +"Sirva imediatamente, decorado com canela ou pedaços de banana, se desejar."
@@ -1244,14 +1244,9 @@ public class AppDbSeed
                 IngredienteId = 62,
                 Quantidade = "1/2 xicara"
             },
-                new ReceitaIngrediente() {
-                ReceitaId = 19,
-                IngredienteId = 5,
-                Quantidade = "a gosto"
-            },
+              
             ////////////////////////////
             
-
 
         };
         builder.Entity<ReceitaIngrediente>().HasData(receitaIngredientes);
