@@ -393,7 +393,7 @@ public class AppDbSeed
                 Calorias = 310,
                 TempoPreparo = "15 minutos",
                 Foto = "/assets/images/dish/torrada_de_abacate.png",
-                Tipo = "Ganho de Massa",
+                Tipo = "Emagrecimento",
                Preparo = "Coloque a manteiga em uma frigideira antiaderente. Quando derreter, quebre os dois ovos, adicione uma pitada de sal e mexa até cozinhar. Reserve."
                     + " Pique metade do avocado e amasse-o em uma tigela pequena. Adicione ½ limão taiti espremido, sal, pimenta e chia (opcional). Misture bem e reserve."
                     + " Coloque as duas fatias de pão 7 grãos na torradeira e toste até ficarem crocantes."
@@ -407,7 +407,7 @@ public class AppDbSeed
                 Calorias = 250,
                 TempoPreparo = "20 minutos",
                 Foto = "/assets/images/dish/panquecas_de_banana.png",
-                Tipo = "Emagrecimento",
+                Tipo = "ganho de Massa",
                 Preparo = "Amasse as bananas em uma travessa funda."
                     + " Adicione os ovos inteiros e misture bem."
                     + " Acrescente a baunilha, a aveia e a canela (ou o chocolate em pó ou a manteiga de amendoim)."
@@ -480,7 +480,7 @@ public class AppDbSeed
                 Calorias = 219,
                 TempoPreparo = "25 minutos",
                 Foto = "/assets/images/dish/macarrao_integral_com_frango_desfiado.png",
-                Tipo = "Ganho de Massa",
+                Tipo = "Emagrecimento",
                 Preparo = "Cozinhe o macarrão integral conforme as instruções da embalagem."
                         +"Em uma panela, aqueça o azeite e refogue a cebola e o alho até ficarem macios. "
                         + "Adicione o frango desfiado e o molho de tomate. Cozinhe por alguns minutos até que tudo esteja bem misturado e aquecido. "
@@ -507,7 +507,7 @@ public class AppDbSeed
                 Calorias = 70,
                 TempoPreparo = "10 minutos",
                 Foto ="/assets/images/dish/isalada_colorida_de_legumes.png",
-                Tipo = "Ganho de Massa",
+                Tipo = "Emagrecimento",
                 Preparo = "Misture todos os legumes em uma tigela. Em uma pequena tigela separada, combine o azeite, suco de limão, sal e pimenta. "
                         + "Regue a salada com o molho e misture bem. Decore com salsinha antes de servir."
         },
@@ -519,7 +519,7 @@ public class AppDbSeed
                 Calorias = 139,
                 TempoPreparo = "20 minutos",
                 Foto ="/assets/images/dish/frangoaomolho.png",
-                Tipo = "Emagrecimento",
+                Tipo = "ganho de Massa",
                 Preparo = "Tempere o frango com sal e pimenta e cozinhe em uma frigideira com um pouco de óleo até que esteja dourado e cozido por completo."
                         +"Em uma panela pequena, misture o suco de laranja, molho de soja, mel e alho."
                         +" Cozinhe em fogo baixo até que o molho reduza e engrosse. "
@@ -575,7 +575,7 @@ public class AppDbSeed
                 Calorias = 65,
                 TempoPreparo = "30 minutos",
                 Foto ="/assets/images/dish/Cremedeabóbora.png",
-                Tipo = "Emagrecimento",
+                Tipo = "Ganho de Massa",
                 Preparo = "Aqueça 1 colher de sopa de azeite em uma panela grande e refogue a cebola e o alho até ficarem macios."
                         +"Adicione 500g de abóbora em cubos e misture bem."
                         +"Despeje 1 litro de caldo de legumes, tampe e cozinhe até a abóbora ficar macia (cerca de 20 minutos)."
@@ -607,7 +607,7 @@ public class AppDbSeed
                 Calorias = 144,
                 TempoPreparo = "30 minutos",
                 Foto ="/assets/images/dish/Arroz_integral.png",
-                Tipo = "Emagrecimento",
+                Tipo = "Ganho de Massa",
                 Preparo = "Cozinhe 1 xícara de arroz integral conforme as instruções da embalagem e reserve."
                 +"Em uma panela, aqueça 1 colher de sopa de azeite e refogue 1 cebola picada e 2 dentes de alho picados até ficarem macios."
                 +"Adicione 300g de peito de frango desfiado e tempere com sal, pimenta-do-reino e páprica a gosto. Misture bem."

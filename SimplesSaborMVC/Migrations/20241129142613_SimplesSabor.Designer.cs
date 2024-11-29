@@ -12,7 +12,7 @@ using SimplesSaborMVC.Data;
 namespace SimplesSaborMVC.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241126122907_SimplesSabor")]
+    [Migration("20241129142613_SimplesSabor")]
     partial class SimplesSabor
     {
         /// <inheritdoc />
@@ -740,7 +740,7 @@ namespace SimplesSaborMVC.Migrations
                             Preparo = "Amasse as bananas em uma travessa funda. Adicione os ovos inteiros e misture bem. Acrescente a baunilha, a aveia e a canela (ou o chocolate em pó ou a manteiga de amendoim). Unte uma frigideira com um pouco de óleo e leve ao fogo até aquecer. Coloque uma colherada grande (ou uma concha) da massa na frigideira. Cozinhe por 2 a 3 minutos. Quando a massa começar a soltar bolhinhas, vire e deixe cozinhar por mais 1 a 2 minutos. Repita o processo de cozimento para as demais porções.",
                             Rendimento = 1,
                             TempoPreparo = "20 minutos",
-                            Tipo = "Emagrecimento"
+                            Tipo = "ganho de Massa"
                         },
                         new
                         {
@@ -812,7 +812,7 @@ namespace SimplesSaborMVC.Migrations
                             Preparo = "Aqueça o azeite em uma frigideira e refogue as iscas de frango até dourar.Adicione os pimentões e a cenoura e continue refogando até os legumes estarem macios. Tempere com molho de soja, sal e pimenta a gosto.",
                             Rendimento = 2,
                             TempoPreparo = "20 minutos",
-                            Tipo = "Emagrecimento"
+                            Tipo = "Ganho de Massa"
                         },
                         new
                         {
@@ -836,7 +836,7 @@ namespace SimplesSaborMVC.Migrations
                             Preparo = "Tempere o frango com sal e pimenta e cozinhe em uma frigideira com um pouco de óleo até que esteja dourado e cozido por completo.Em uma panela pequena, misture o suco de laranja, molho de soja, mel e alho. Cozinhe em fogo baixo até que o molho reduza e engrosse. Sirva o frango com o molho por cima.",
                             Rendimento = 2,
                             TempoPreparo = "20 minutos",
-                            Tipo = "Ganho de Massa"
+                            Tipo = "ganho de Massa"
                         },
                         new
                         {
@@ -848,7 +848,7 @@ namespace SimplesSaborMVC.Migrations
                             Preparo = "Misture todos os ingredientes até formar uma massa homogênea.Aqueça uma frigideira antiaderente e despeje a massa formando pequenas panquecas.Cozinhe por 2-3 minutos de cada lado, ou até que estejam douradas.",
                             Rendimento = 2,
                             TempoPreparo = "10 minutos",
-                            Tipo = "Ganho de Massa"
+                            Tipo = "Emagrecimento"
                         },
                         new
                         {
@@ -860,7 +860,7 @@ namespace SimplesSaborMVC.Migrations
                             Preparo = "Preaqueça o forno a 200°C. Coloque as rodelas de berinjela em uma assadeira e regue com azeite.Tempere com orégano, alho em pó, sal e pimenta.Asse por 20-25 minutos, virando as rodelas na metade do tempo, até que estejam macias e levemente douradas.",
                             Rendimento = 2,
                             TempoPreparo = "30 minutos",
-                            Tipo = "Ganho de Massa"
+                            Tipo = "Emagrecimento"
                         },
                         new
                         {
@@ -884,7 +884,7 @@ namespace SimplesSaborMVC.Migrations
                             Preparo = "Aqueça 1 colher de sopa de azeite em uma panela grande e refogue a cebola e o alho até ficarem macios.Adicione 500g de abóbora em cubos e misture bem.Despeje 1 litro de caldo de legumes, tampe e cozinhe até a abóbora ficar macia (cerca de 20 minutos).Transfira tudo para o liquidificador e bata até obter um creme liso.Volte o creme à panela, ajuste o sal e a pimenta-do-reino, e adicione noz-moscada a gosto.Misture 1/2 xícara de creme de leite ou leite de coco, se desejar um toque mais cremoso.Aqueça por mais alguns minutos e sirva decorado com salsinha ou cebolinha picada.",
                             Rendimento = 2,
                             TempoPreparo = "30 minutos",
-                            Tipo = "Emagrecimento"
+                            Tipo = "Ganho de Massa"
                         },
                         new
                         {
@@ -908,7 +908,7 @@ namespace SimplesSaborMVC.Migrations
                             Preparo = "Cozinhe 1 xícara de arroz integral conforme as instruções da embalagem e reserve.Em uma panela, aqueça 1 colher de sopa de azeite e refogue 1 cebola picada e 2 dentes de alho picados até ficarem macios.Adicione 300g de peito de frango desfiado e tempere com sal, pimenta-do-reino e páprica a gosto. Misture bem.Acrescente 1/2 xícara de molho de tomate e 1/2 xícara de milho verde, cozinhando por mais alguns minutos.Em um refratário untado, espalhe o arroz integral, cubra com a mistura de frango e finalize com queijo muçarela ralado a gosto.Leve ao forno preaquecido a 200°C por cerca de 15 minutos, ou até o queijo derreter e dourar.Sirva quente, decorado com salsinha ou cebolinha picada, se desejar.",
                             Rendimento = 2,
                             TempoPreparo = "30 minutos",
-                            Tipo = "Emagrecimento"
+                            Tipo = "Ganho de Massa"
                         },
                         new
                         {
@@ -920,7 +920,7 @@ namespace SimplesSaborMVC.Migrations
                             Preparo = "Bata no liquidificador 1 banana madura, 1 scoop de whey protein de sua preferência, 1/2 xícara de leite (pode ser vegetal ou leite comum) e 1 colher de chá de mel.Adicione gelo a gosto e bata novamente até ficar homogêneo.Sirva imediatamente, decorado com canela ou pedaços de banana, se desejar.",
                             Rendimento = 2,
                             TempoPreparo = "30 minutos",
-                            Tipo = "Emagrecimento"
+                            Tipo = "Ganho de Massa"
                         },
                         new
                         {
